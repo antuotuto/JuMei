@@ -40,6 +40,7 @@
     </div>
 
     <div class="choose-Page" id="choosePage">
+      <div class="chooseOk" id="chooseOk"></div>
       <div class="chooseGlowworm"></div>
       <div class="chooseTree"></div>
       <div class="chooseCloud1"></div>
@@ -48,7 +49,6 @@
       <div class="chooseLantern2"></div>
       <div class="chooseLantern3"></div>
       <div class="chooseLantern4"></div>
-      <div class="chooseOk"></div>
       <div class="chooseOther"></div>
       <div class="chooseZao"></div>
       <div class="chooseLotus"></div>
@@ -77,16 +77,16 @@
     </div>
   </div>
 
+  <div class="excl-page" id="exclPage">
+
+  </div>
+
 
 
 
 
   <script type=text/javascript>
-    window.onload = function() {
-      var loading = document.getElementById('loading')
-    }
     $('#fristButton').click(function() {
-      console.log(1);
       $("#endPage").addClass("active");
       $("#choosePage").addClass("active");
       $(".dou1").addClass("active");
@@ -102,6 +102,11 @@
       $(".fruits5").addClass("active");
       $(".fruits6").addClass("active");
     });
+
+    $('#chooseOk').click(function() {
+      $("#choosePage").addClass("OnActive");
+      $("#exclPage").addClass("active");
+    })
 
 
 
@@ -126,7 +131,6 @@
       $(".dou3").addClass("active");
       $(".dou4").addClass("active");
     });
-
   </script>
 </body>
 

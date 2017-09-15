@@ -646,6 +646,16 @@ body{
   height: 46px;
 }
 
+.excl-page.active{
+  height:100%;
+  width:100%;
+  position: absolute;
+  top:0;
+  left:0;
+  background: rgba(0,0,0,.5);
+  z-index: 600;
+}
+
 
 /*end-page css*/
 .end-page{
