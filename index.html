@@ -64,10 +64,10 @@
       <div class="chooseXian"></div>
       <div class="chooseEggB"></div>
       <div class="chooseEgg"></div>
-      <div class="chooseKernel"></div>
       <div class="dou4"></div>
       <div class="dou3"></div>
       <div class="dou1"></div>
+      <div class="chooseKernel" id="chooseKernel"></div>
       <div class="choosesweetened"></div>
       <div class="chooseGlowworm"></div>
       <div class="chooseMoon"></div>
@@ -90,6 +90,28 @@
       $("#endPage").addClass("active");
       $("#choosePage").addClass("active");
     });
+
+
+    $.fn.longPress = function(fn) {
+      var timeout = undefined;
+      var $this = this;
+      for (var i = 0; i < $this.length; i++) {
+        $this[i].addEventListener('touchstart', function(event) {
+          timeout = setTimeout(fn, 800);
+        }, false);
+        $this[i].addEventListener('touchend', function(event) {
+          clearTimeout(timeout);
+        }, false);
+      }
+    }
+
+    $('#chooseKernel').longPress(function() {
+      $(".dou1").addClass("active");
+      $(".dou3").addClass("active");
+      $(".dou4").addClass("active");
+
+    });
+
   </script>
 </body>
 
