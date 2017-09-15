@@ -335,6 +335,36 @@ body{
   width: 51px;
   height: 70px;
 }
+
+.iceCream.active{
+  animation:iceCreams 3s infinite;
+  animation-fill-mode:forwards;
+}
+
+.lotus.active{
+  animation:iceCreams 3s infinite;
+  animation-fill-mode:forwards;
+}
+
+@-webkit-keyframes iceCreams {
+    0% {
+        transform: scale(0.8,0.8);
+    }
+    25% {
+        transform: scale(1.2,1.2);
+    }
+    50% {
+        transform: scale(0.8,0.8);
+    }
+    75% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(0.8,0.8);
+    }
+}
+
+
 .chooseIce {
   background-image: url("../images/chooseIce.png");
   position: absolute;
@@ -375,6 +405,30 @@ body{
   width: 78px;
   height: 29px;
 }
+
+.chooseEgg.active{
+  animation:chooseEggs 3s infinite;
+  animation-fill-mode:forwards;
+}
+
+@-webkit-keyframes chooseEggs {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    25% {
+        transform: translate3d(-16px, 0, 0);
+    }
+    50% {
+        transform: translate3d(0, 0, 0);
+    }
+    75% {
+        transform: translate3d(-16px, 0, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
 .chooseKernel {
   background-image: url("../images/chooseKernel.png");
   position: absolute;
@@ -382,7 +436,9 @@ body{
   top: 450px;
   width: 155px;
   height: 201px;
+  z-index: 5;
 }
+
 .dou4 {
   background-image: url("../images/dou4.png");
   position: absolute;
@@ -407,28 +463,82 @@ body{
   width: 31px;
   height: 33px;
 }
-.dou1.active,
-.dou2.active,
+
 .dou3.active{
-  animation:douFruits 3s;
+  animation:douFruits 3s infinite;
+  animation-fill-mode:forwards;
+}
+
+.dou1.active{
+  animation:douFruits3 3s infinite;
+  animation-fill-mode:forwards;
+}
+
+.dou4.active{
+  animation:douFruits2 3s infinite;
   animation-fill-mode:forwards;
 }
 
 @-webkit-keyframes douFruits {
     0% {
-        opacity: 1;
         transform: translate3d(0, 0, 0);
     }
     25% {
-        opacity: .5;
+        transform: translate3d(-16px, 0, 0);
+        z-index: 10;
     }
     50% {
-        opacity: .3;
+        transform: translate3d(0, 0, 0);
+    }
+    75% {
+        transform: translate3d(-16px, 0, 0);
+        z-index: 10;
     }
     100% {
-        opacity: 1;
-        transform: translate3d(0, -100%, 0);
-        transform:scale(4,4);
+        transform: translate3d(0, 0, 0);
+        z-index: 0;
+    }
+}
+
+@-webkit-keyframes douFruits2 {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    25% {
+        transform: translate3d(16px, 16px, 0);
+        z-index: 10;
+    }
+    50% {
+        transform: translate3d(0, 0, 0);
+    }
+    75% {
+        transform: translate3d(16px, 16px, 0);
+        z-index: 10;
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+        z-index: 0;
+    }
+}
+
+@-webkit-keyframes douFruits3 {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    25% {
+        transform: translate3d(13px, -13px, 0);
+        z-index: 10;
+    }
+    50% {
+        transform: translate3d(0, 0, 0);
+    }
+    75% {
+        transform: translate3d(13px, -13px, 0);
+        z-index: 10;
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+        z-index: 0;
     }
 }
 
@@ -440,6 +550,7 @@ body{
   width: 149px;
   height: 194px;
 }
+
 .chooseGlowworm {
   background-image: url("../images/chooseGlowworm.png");
   position: absolute;
