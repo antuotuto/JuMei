@@ -13,36 +13,91 @@
 </head>
 
 <body>
-  <div class="end-page">
-    <!-- <div class="loading" id="loading"></div> -->
-    <div class="end-cloud1 animated fadeInDown delay_100ms"></div>
-    <div class="end-cloud4 animated fadeInRight delay_100ms"></div>
-    <div class="end-cloud3 animated fadeInDown delay_100ms"></div>
-    <div class="end-cloud2 animated fadeInRight delay_100ms"></div>
-    <div class="endWintersweet animated fadeInLeft delay_400ms"></div>
-    <div class="endTree animated fadeInRight delay_400ms"></div>
-    <div class="endGlowworm1"></div>
-    <div class="endGlowworm2"></div>
-    <div class="endLantern1 animated fadeInUp delay_200ms"></div>
-    <div class="endLantern2 animated fadeInUp delay_300ms"></div>
-    <div class="endLantern3 animated fadeInUp delay_400ms"></div>
-    <div class="endLantern4 animated fadeInUp delay_500ms"></div>
-    <div class="endLantern5 animated fadeInUp delay_600ms"></div>
-    <div class="poetry-box">
-      <div class="poetry animated fadeInUp delay_500ms"></div>
-      <div class="fristButton animated fadeInUp delay_900ms"></div>
+  <div class="content-box">
+    <div class="end-page" id="endPage">
+      <div class="end-cloud1 animated fadeInDown delay_100ms"></div>
+      <div class="end-cloud4 animated fadeInRight delay_100ms"></div>
+      <div class="end-cloud3 animated fadeInDown delay_100ms"></div>
+      <div class="end-cloud2 animated fadeInRight delay_100ms"></div>
+      <div class="endWintersweet animated fadeInLeft delay_400ms"></div>
+      <div class="endTree animated fadeInRight delay_400ms"></div>
+      <div class="endGlowworm1"></div>
+      <div class="endGlowworm2"></div>
+      <div class="endLantern1 animated fadeInUp delay_200ms"></div>
+      <div class="endLantern2 animated fadeInUp delay_300ms"></div>
+      <div class="endLantern3 animated fadeInUp delay_400ms"></div>
+      <div class="endLantern4 animated fadeInUp delay_500ms"></div>
+      <div class="endLantern5 animated fadeInUp delay_600ms"></div>
+      <div class="poetry-box">
+        <div class="poetry animated fadeInUp delay_500ms"></div>
+        <div class="fristButton animated fadeInUp delay_900ms" id="fristButton"></div>
+      </div>
+      <div class="endSCloud1"></div>
+      <div class="endSCloud2"></div>
+      <div class="endGlowworm1 delay_2s"></div>
+      <div class="endGlowworm2 delay_2s"></div>
+      <div class="endPoet animated fadeInRight delay_600ms"></div>
     </div>
-    <div class="endSCloud1"></div>
-    <div class="endSCloud2"></div>
-    <div class="endGlowworm1 delay_2s"></div>
-    <div class="endGlowworm2 delay_2s"></div>
-    <div class="endPoet animated fadeInRight delay_600ms"></div>
+
+    <div class="choose-Page" id="choosePage">
+      <div class="chooseTree"></div>
+      <div class="chooseCloud1"></div>
+      <div class="chooseCloud2"></div>
+      <div class="chooseLantern1"></div>
+      <div class="chooseLantern2"></div>
+      <div class="chooseLantern3"></div>
+      <div class="chooseLantern4"></div>
+      <div class="fruits1"></div>
+      <div class="fruits2"></div>
+      <div class="fruits3"></div>
+      <div class="fruits4"></div>
+      <div class="fruits5"></div>
+      <div class="fruits6"></div>
+      <div class="chooseOk"></div>
+      <div class="chooseOther"></div>
+      <div class="chooseZao"></div>
+      <div class="lotus"></div>
+      <div class="chooseLotus"></div>
+      <div class="iceCream"></div>
+      <div class="chooseIce"></div>
+      <div class="chooseFruits"></div>
+      <div class="chooseXian"></div>
+      <div class="chooseEggB"></div>
+      <div class="chooseEgg"></div>
+      <div class="chooseKernel"></div>
+      <div class="dou4"></div>
+      <div class="dou3"></div>
+      <div class="dou1"></div>
+      <div class="choosesweetened"></div>
+      <div class="chooseGlowworm"></div>
+      <div class="chooseMoon"></div>
+      <div class="chooseWintersweet"></div>
+      <div class="chooseWhat"></div>
+      <div class="chooseBing"></div>
+    </div>
   </div>
+
+
+
+
+
   <script type=text/javascript>
     window.onload = function() {
       var loading = document.getElementById('loading')
-      loading.classList.add('hidden')
     }
+    $('#fristButton').click(function() {
+      console.log(1);
+      // $("#endPag").animate({
+      //   bottom: '100%',
+      //   opacity: '0.5',
+      // });
+      // $("#choosePage").animate({
+      //   top: '100%',
+      //   opacity: '0.5',
+      // });
+      $("#endPage").addClass("active");
+      $("#choosePage").addClass("active");
+    });
   </script>
 </body>
 
