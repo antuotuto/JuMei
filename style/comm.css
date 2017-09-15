@@ -613,10 +613,10 @@ body{
   background-image: url("../images/chooseMoon.png");
   position: absolute;
   background-size: 100% 100%;
-  left: 478px;
-  top: -176px;
-  width: 429px;
-  height: 429px;
+  left: 481px;
+  top: -62px;
+  width: 300px;
+  height: 300px;
 }
 .chooseWintersweet {
   background-image: url("../images/chooseWintersweet.png");
