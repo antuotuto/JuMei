@@ -112,6 +112,34 @@ body{
   height:100%;
 }
 
+/*frist page*/
+
+.poetry-box{
+  width: 320px;
+  height: 436px;
+  margin: 0 auto;
+  position: relative;
+  top:396px;
+  z-index: 500;
+}
+
+.poetry{
+  background-image: url("../images/poetry.png");
+  background-size: 100% 100%;
+  width: 320px;
+  height: 325px;
+}
+
+.fristButton{
+  background-image: url("../images/fristButton.png");
+  background-size: 100% 100%;
+  width: 380px;
+  height: 89px;
+  position: relative;
+  margin-top: 100px;
+  margin-left: -36px;
+}
+
 /*end-page css*/
 .end-page{
   height:100%;
@@ -313,6 +341,32 @@ body{
   z-index: 500;
 }
 
+.endSCloud1{
+  background-image:url('../images/endSCloud.png');
+  background-size: 100% 100%;
+  width: 102px;
+  height: 42px;
+  margin: 0 auto;
+  position: absolute;
+  top: 414px;
+  left: 123px;
+  z-index: 500;
+  animation: arrow 10s infinite ease-in-out;
+}
+
+.endSCloud2{
+  background-image:url('../images/endSCloud.png');
+  background-size: 100% 100%;
+  width: 102px;
+  height: 42px;
+  margin: 0 auto;
+  position: absolute;
+  top: 734px;
+  right: 123px;
+  z-index: 500;
+  animation: arrow 10s infinite ease-in-out;
+}
+
 /*萤火虫一*/
 @-webkit-keyframes arrow {
     0% {
@@ -345,6 +399,8 @@ body{
 }
 
 /**/
+
+
 
 
 
