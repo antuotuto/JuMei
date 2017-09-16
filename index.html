@@ -97,7 +97,7 @@
     <div class="lotteryGlowworm1"></div>
     <div class="lotteryMoon"></div>
     <div class="lotteryWintersweet"></div>
-    <div class="lotteryTree"></div>
+    <div class="lotteryTree" id="lotteryTree"></div>
     <div class="lotteryYun2"></div>
     <div class="lotteryYun1"></div>
     <div class="lotteryDeng2"></div>
@@ -116,8 +116,14 @@
     <div class="lotteryBing1"></div>
     <div class="lotteryChoose"></div>
     <div class="lotteryLove"></div>
-    <div class="lotteryOk"></div>
+    <!-- <div class="lotteryOk"></div> -->
   </div>
+
+  <div class="win-page" id="winPage">
+    <div class="star"></div>
+  </div>
+
+
 
 
 
@@ -152,29 +158,14 @@
       $("#lotteryPage").addClass("active");
     })
 
+    $('#lotteryTree').click(function() {
+      $("#winPage").addClass("active");
+      $(".star").addClass("active");
+    })
 
 
 
 
-
-    $.fn.longPress = function(fn) {
-      var timeout = undefined;
-      var $this = this;
-      for (var i = 0; i < $this.length; i++) {
-        $this[i].addEventListener('touchstart', function(event) {
-          timeout = setTimeout(fn, 800);
-        }, false);
-        $this[i].addEventListener('touchend', function(event) {
-          clearTimeout(timeout);
-        }, false);
-      }
-    }
-
-    $('#chooseKernel').longPress(function() {
-      $(".dou1").addClass("active");
-      $(".dou3").addClass("active");
-      $(".dou4").addClass("active");
-    });
   </script>
 </body>
 

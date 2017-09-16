@@ -169,6 +169,7 @@ body{
   height:100%;
   width:100%;
   position: absolute;
+  background-image: url("../images/winBackground.png");
   top:0;
   left:0;
   overflow: hidden;
@@ -884,13 +885,12 @@ body{
   top:0;
   left:0;
   transition: 1s;
+  background-image: url("../images/winBackground.png");
   transform: translate3d(0, -100%, 0);
-  opacity: .6;
 }
 
 .lottery-page.active{
   transform: translate3d(0, 0, 0);
-  opacity: 1;
 }
 
 
@@ -1085,7 +1085,7 @@ body{
   height: 132px;
 }
 
-.lotteryOk {
+/*.lotteryOk {
   background-image: url("../images/lotteryOk.png");
   position: absolute;
   left: 171px;
@@ -1093,12 +1093,44 @@ body{
   width: 380px;
   height: 89px;
   z-index: 119;
+}*/
+
+/**/
+
+
+/*winpage*/
+
+.win-page{
+  height:100%;
+  width:100%;
+  position: absolute;
+  top:-100%;
+  left:100%;
+  transition: 1s;
+  background: rgba(0,0,0,.7);
+  transform: scale(.1,.1);
+}
+
+.win-page.active{
+  transform: translate3d(0, 0, 0);
+  transform: scale(1,1);
+  top:0;
+  left:0;
+}
+
+.star{
+  width:750px;
+  height:1334px;
+  background-image:url('../images/star.png');
 }
 
 
 
-
 /**/
+
+
+
+
 
 /*end-page css*/
 .end-page{
