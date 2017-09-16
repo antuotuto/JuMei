@@ -1106,7 +1106,7 @@ body{
   position: absolute;
   top:-100%;
   left:100%;
-  transition: 1s;
+  transition: .5s;
   background: rgba(0,0,0,.7);
   transform: scale(.1,.1);
 }
@@ -1121,6 +1121,7 @@ body{
 .star{
   width:750px;
   height:1334px;
+  background-size: 100% 100%;
   background-image:url('../images/star.png');
 }
 
