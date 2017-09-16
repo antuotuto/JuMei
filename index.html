@@ -78,7 +78,45 @@
   </div>
 
   <div class="excl-page" id="exclPage">
+    <div class="excl">
+      <div class="exclDou"></div>
+      <div class="exclKernel"></div>
+      <div class="exclXian"></div>
+      <div class="exclIce"></div>
+      <div class="exclFruits"></div>
+      <div class="exclOther"></div>
+      <div class="exclZao"></div>
+      <div class="exclEgg"></div>
+      <div class="exclLotus"></div>
+    </div>
+    <div class="exclButton" id="exclButton"></div>
+  </div>
 
+  <div class="lottery-page" id="lotteryPage">
+    <div class="lotteryGlowworm2"></div>
+    <div class="lotteryGlowworm1"></div>
+    <div class="lotteryMoon"></div>
+    <div class="lotteryWintersweet"></div>
+    <div class="lotteryTree"></div>
+    <div class="lotteryYun2"></div>
+    <div class="lotteryYun1"></div>
+    <div class="lotteryDeng2"></div>
+    <div class="lotteryDeng4"></div>
+    <div class="lotteryDeng3"></div>
+    <div class="lotteryDeng5"></div>
+    <div class="lotteryDeng1"></div>
+    <div class="lotteryBing9"></div>
+    <div class="lotteryBing8"></div>
+    <div class="lotteryBing7"></div>
+    <div class="lotteryBing6"></div>
+    <div class="lotteryBing5"></div>
+    <div class="lotteryBing4"></div>
+    <div class="lotteryBing3"></div>
+    <div class="lotteryBing2"></div>
+    <div class="lotteryBing1"></div>
+    <div class="lotteryChoose"></div>
+    <div class="lotteryLove"></div>
+    <div class="lotteryOk"></div>
   </div>
 
 
@@ -106,6 +144,12 @@
     $('#chooseOk').click(function() {
       $("#choosePage").addClass("OnActive");
       $("#exclPage").addClass("active");
+    })
+
+    $('#exclButton').click(function() {
+      $("#choosePage").removeClass("active");
+      $("#exclPage").removeClass("active");
+      $("#lotteryPage").addClass("active");
     })
 
 

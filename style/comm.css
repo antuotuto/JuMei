@@ -172,12 +172,18 @@ body{
   top:0;
   left:0;
   overflow: hidden;
-  transform: translate3d(100%, 0,0);
+  transition: 1s;
+  opacity: 0;
+  transform: translate3d(0, -100%,0);
 }
 
 .choose-Page.active{
-  animation:choosePage 1.2s;
-  animation-fill-mode:forwards;
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+.choose-Page.OnActive .chooseOk{
+  display: none;
 }
 
 .chooseTree {
@@ -646,6 +652,13 @@ body{
   height: 46px;
 }
 
+/*excl page*/
+
+.excl-page{
+  transition: 1s;
+  transform: translate3d(0, -100%, 0);
+}
+
 .excl-page.active{
   height:100%;
   width:100%;
@@ -653,9 +666,439 @@ body{
   top:0;
   left:0;
   background: rgba(0,0,0,.5);
+  transform: translate3d(0, 0, 0);
   z-index: 600;
 }
 
+.excl {
+  background-image: url("../images/excl.png");
+  position: absolute;
+  left: 28px;
+  top: 319px;
+  width: 689px;
+  height: 601px;
+  z-index: 173;
+}
+.exclButton {
+  background-image: url("../images/exclButton.png");
+  position: absolute;
+  left: 171px;
+  top: 1110px;
+  width: 380px;
+  height: 89px;
+  z-index: 172;
+}
+
+.exclDou{
+  border-radius: 2px;
+  background-color: rgb(237, 17, 100);
+  position: absolute;
+  left: 46px;
+  top: 453px;
+  width: 47px;
+  height: 97px;
+}
+
+.exclKernel{
+  border-radius: 2px;
+  background-color: rgb(255, 123, 172);
+  position: absolute;
+  left: 110px;
+  top: 413px;
+  width: 47px;
+  height: 137px;
+}
+
+.exclIce {
+  border-radius: 2px;
+  background-color: rgb(171, 74, 156);
+  position: absolute;
+  left: 570px;
+  top: 109px;
+  width: 47px;
+  height: 442px;
+  z-index: 175;
+}
+.exclFruits {
+  border-radius: 2px;
+  background-color: rgb(0, 154, 194);
+  position: absolute;
+  left: 502px;
+  top: 156px;
+  width: 47px;
+  height: 395px;
+  z-index: 174;
+}
+.exclOther {
+  border-radius: 2px;
+  background-color: rgb(95, 196, 226);
+  position: absolute;
+  left: 435px;
+  top: 197px;
+  width: 47px;
+  height: 354px;
+  z-index: 173;
+}
+.exclZao {
+  border-radius: 2px;
+  background-color: rgb(98, 188, 110);
+  position: absolute;
+  left: 371px;
+  top: 243px;
+  width: 47px;
+  height: 308px;
+  z-index: 172;
+}
+.exclEgg {
+  border-radius: 2px;
+  background-color: rgb(159, 188, 46);
+  position: absolute;
+  left: 303px;
+  top: 273px;
+  width: 47px;
+  height: 278px;
+  z-index: 171;
+}
+.exclLotus {
+  border-radius: 2px;
+  background-color: rgb(253, 172, 19);
+  position: absolute;
+  left: 236px;
+  top: 321px;
+  width: 47px;
+  height: 229px;
+  z-index: 170;
+}
+
+.exclXian {
+  border-radius: 2px;
+  background-color: rgb(246, 139, 31);
+  position: absolute;
+  left: 170px;
+  top: 367px;
+  width: 47px;
+  height: 183px;
+  z-index: 176;
+}
+
+.exclDou:after{
+  content: '1398';
+  font-size: 14px;
+  width: 47px;
+  color: #fff;
+  text-align: center;
+  top: -28px;
+  position: absolute;
+}
+
+.exclKernel:after{
+  content: '1398';
+  font-size: 14px;
+  width: 47px;
+  color: #fff;
+  text-align: center;
+  top: -28px;
+  position: absolute;
+}
+
+.exclIce:after{
+  content: '1398';
+  font-size: 14px;
+  width: 47px;
+  color: #fff;
+  text-align: center;
+  top: -28px;
+  position: absolute;
+}
+
+.exclFruits:after{
+  content: '1398';
+  font-size: 14px;
+  width: 47px;
+  color: #fff;
+  text-align: center;
+  top: -28px;
+  position: absolute;
+}
+
+.exclOther:after{
+  content: '1398';
+  font-size: 14px;
+  width: 47px;
+  color: #fff;
+  text-align: center;
+  top: -28px;
+  position: absolute;
+}
+
+.exclZao:after{
+  content: '1398';
+  font-size: 14px;
+  width: 47px;
+  color: #fff;
+  text-align: center;
+  top: -28px;
+  position: absolute;
+}
+
+.exclEgg:after{
+  content: '1398';
+  font-size: 14px;
+  width: 47px;
+  color: #fff;
+  text-align: center;
+  top: -28px;
+  position: absolute;
+}
+
+.exclLotus:after{
+  content: '1398';
+  font-size: 14px;
+  width: 47px;
+  color: #fff;
+  text-align: center;
+  top: -28px;
+  position: absolute;
+}
+
+.exclXian:after{
+  content: '1398';
+  font-size: 14px;
+  width: 47px;
+  color: #fff;
+  text-align: center;
+  top: -28px;
+  position: absolute;
+}
+
+
+/**/
+
+
+/*lotteryPage*/
+
+.lottery-page{
+  height:100%;
+  width:100%;
+  position: absolute;
+  top:0;
+  left:0;
+  transition: 1s;
+  transform: translate3d(0, -100%, 0);
+  opacity: .6;
+}
+
+.lottery-page.active{
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+
+.lotteryMoon {
+  background-image: url("../images/chooseMoon.png");
+  position: absolute;
+  background-size: 100% 100%;
+  left: 481px;
+  top: -62px;
+  width: 300px;
+  height: 300px;
+}
+.lotteryWintersweet {
+  background-image: url("../images/chooseWintersweet.png");
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 236px;
+  height: 186px;
+}
+.lotteryTree {
+  background-image: url("../images/lotteryTree.png");
+  position: absolute;
+  left: 629px;
+  top: 239px;
+  width: 176px;
+  height: 64px;
+}
+.lotteryYun2 {
+  background-image: url("../images/lotteryYun2.png");
+  position: absolute;
+  left: 104px;
+  top: 235px;
+  width: 102px;
+  height: 42px;
+}
+.lotteryYun1 {
+  background-image: url("../images/lotteryYun1.png");
+  position: absolute;
+  left: 642px;
+  top: 487px;
+  width: 102px;
+  height: 42px;
+}
+.lotteryDeng2 {
+  background-image: url("../images/lotteryDeng2.png");
+  position: absolute;
+  left: 218px;
+  top: 74px;
+  width: 13px;
+  height: 19px;
+}
+.lotteryDeng4 {
+  background-image: url("../images/lotteryDeng4.png");
+  position: absolute;
+  left: 401px;
+  top: 29px;
+  width: 13px;
+  height: 19px;
+}
+.lotteryDeng3 {
+  background-image: url("../images/lotteryDeng3.png");
+  position: absolute;
+  left: 319px;
+  top: 105px;
+  width: 27px;
+  height: 38px;
+}
+.lotteryDeng5 {
+  background-image: url("../images/lotteryDeng5.png");
+  position: absolute;
+  left: 492px;
+  top: 177px;
+  width: 39px;
+  height: 56px;
+}
+.lotteryDeng1 {
+  background-image: url("../images/lotteryDeng1.png");
+  position: absolute;
+  left: 26px;
+  top: 206px;
+  width: 39px;
+  height: 56px;
+}
+.lotteryGlowworm2 {
+  background-image: url("../images/lotteryGlowworm2.png");
+  position: absolute;
+  left: 27px;
+  top: -410px;
+  width: 1133px;
+  height: 939px;
+  animation: arrow 1.5s infinite ease-in-out;
+}
+.lotteryGlowworm1 {
+  background-image: url("../images/lotteryGlowworm1.png");
+  position: absolute;
+  left: -250px;
+  top: 435px;
+  width: 1133px;
+  height: 986px;
+  animation: arrow2 1.5s infinite ease-in-out;
+}
+.lotteryBing9 {
+  background-image: url("../images/lotteryBing9.png");
+  position: absolute;
+  left: 537px;
+  top: 889px;
+  width: 145px;
+  height: 143px;
+}
+.lotteryBing8 {
+  background-image: url("../images/lotteryBing8.png");
+  position: absolute;
+  left: 307px;
+  top: 889px;
+  width: 145px;
+  height: 143px;
+}
+.lotteryBing7 {
+  background-image: url("../images/lotteryBing7.png");
+  position: absolute;
+  left: 79px;
+  top: 889px;
+  width: 145px;
+  height: 143px;
+}
+.lotteryBing6 {
+  background-image: url("../images/lotteryBing6.png");
+  position: absolute;
+  left: 537px;
+  top: 689px;
+  width: 145px;
+  height: 143px;
+}
+.lotteryBing5 {
+  background-image: url("../images/lotteryBing5.png");
+  position: absolute;
+  left: 307px;
+  top: 689px;
+  width: 145px;
+  height: 143px;
+}
+.lotteryBing4 {
+  background-image: url("../images/lotteryBing4.png");
+  position: absolute;
+  left: 79px;
+  top: 689px;
+  width: 145px;
+  height: 143px;
+}
+.lotteryBing3 {
+  background-image: url("../images/lotteryBing3.png");
+  position: absolute;
+  left: 537px;
+  top: 490px;
+  width: 145px;
+  height: 143px;
+}
+.lotteryBing2 {
+  background-image: url("../images/lotteryBing2.png");
+  position: absolute;
+  left: 307px;
+  top: 490px;
+  width: 145px;
+  height: 143px;
+}
+.lotteryBing1 {
+  background-image: url("../images/lotteryBing1.png");
+  position: absolute;
+  left: 79px;
+  top: 490px;
+  width: 145px;
+  height: 143px;
+}
+
+.lotteryChoose{
+  background-image: url("../images/lotteryChoose.png");
+  position: absolute;
+  left: 235px;
+  top: 370px;
+  width:279px;
+  height:23px;
+}
+
+.lotteryLove{
+  background-image: url("../images/lotteryLove.png");
+  position: absolute;
+  left: 79px;
+  top: 208px;
+  width: 595px;
+  height: 132px;
+}
+
+.lotteryOk {
+  background-image: url("../images/lotteryOk.png");
+  position: absolute;
+  left: 171px;
+  top: 1117px;
+  width: 380px;
+  height: 89px;
+  z-index: 119;
+}
+
+
+
+
+/**/
 
 /*end-page css*/
 .end-page{
@@ -918,17 +1361,6 @@ body{
     }
 }
 
-@-webkit-keyframes choosePage {
-    0% {
-        opacity: 0;
-        transform: translate3d(0, -100%, 0);
-    }
-    100% {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-}
-/**/
 
 @-webkit-keyframes endSCloudT {
     0% {
