@@ -195,6 +195,7 @@ body{
   width: 177px;
   height: 66px;
 }
+
 .chooseCloud1 {
   background-image: url("../images/endSCloud.png");
   position: absolute;
@@ -359,6 +360,20 @@ body{
   height: 202px;
 }
 
+.chooseOther:after{
+  content: '';
+  background-image: url(../images/chooseTrue.png);
+  background-size: 100% 100%;
+  font-size: 14px;
+  height: 13px;
+  width: 20px;
+  color: #fff;
+  text-align: center;
+  top: 179px;
+  left: 6px;
+  position: absolute;
+}
+
 .chooseZao{
   background-image: url("../images/chooseZao.png");
   position: absolute;
@@ -368,14 +383,29 @@ body{
   height: 194px;
 }
 
+.chooseZao:after{
+  content: '';
+  background-image: url(../images/chooseTrue.png);
+  background-size: 100% 100%;
+  font-size: 14px;
+  height: 13px;
+  width: 20px;
+  color: #fff;
+  text-align: center;
+  top: 172px;
+  left: 6px;
+  position: absolute;
+}
+
 .lotus {
   background-image: url("../images/lotus.png");
   position: absolute;
   left: 394px;
-  top: 1011px;
+  top: 941px;
   width: 24px;
   height: 33px;
 }
+
 .chooseLotus {
   background-image: url("../images/chooseLotus.png");
   position: absolute;
@@ -384,6 +414,21 @@ body{
   width: 145px;
   height: 194px;
 }
+
+.chooseLotus:after{
+  content: '';
+  background-image: url(../images/chooseTrue.png);
+  background-size: 100% 100%;
+  font-size: 14px;
+  height: 13px;
+  width: 20px;
+  color: #fff;
+  text-align: center;
+  top: 172px;
+  left: 6px;
+  position: absolute;
+}
+
 .iceCream {
   background-image: url("../images/iceCream.png");
   position: absolute;
@@ -421,7 +466,6 @@ body{
     }
 }
 
-
 .chooseIce {
   background-image: url("../images/chooseIce.png");
   position: absolute;
@@ -430,6 +474,21 @@ body{
   width: 155px;
   height: 194px;
 }
+
+.chooseIce:after{
+  content: '';
+  background-image: url(../images/chooseTrue.png);
+  background-size: 100% 100%;
+  font-size: 14px;
+  height: 13px;
+  width: 20px;
+  color: #fff;
+  text-align: center;
+  top: 172px;
+  left: 6px;
+  position: absolute;
+}
+
 .chooseFruits {
   background-image: url("../images/chooseFruits.png");
   position: absolute;
@@ -438,6 +497,21 @@ body{
   width: 145px;
   height: 194px;
 }
+
+.chooseFruits:after{
+  content: '';
+  background-image: url(../images/chooseTrue.png);
+  background-size: 100% 100%;
+  font-size: 14px;
+  height: 13px;
+  width: 20px;
+  color: #fff;
+  text-align: center;
+  top: 172px;
+  left: 9px;
+  position: absolute;
+}
+
 .chooseXian {
   background-image: url("../images/chooseXian.png");
   position: absolute;
@@ -446,6 +520,21 @@ body{
   width: 148px;
   height: 194px;
 }
+
+.chooseXian:after{
+  content: '';
+  background-image: url(../images/chooseTrue.png);
+  background-size: 100% 100%;
+  font-size: 14px;
+  height: 13px;
+  width: 20px;
+  color: #fff;
+  text-align: center;
+  top: 172px;
+  left: 6px;
+  position: absolute;
+}
+
 .chooseEggB {
   background-image: url("../images/chooseEggB.png");
   position: absolute;
@@ -454,6 +543,21 @@ body{
   width: 155px;
   height: 194px;
 }
+
+.chooseEggB:after{
+  content: '';
+  background-image: url(../images/chooseTrue.png);
+  background-size: 100% 100%;
+  font-size: 14px;
+  height: 13px;
+  width: 20px;
+  color: #fff;
+  text-align: center;
+  top: 172px;
+  left: 6px;
+  position: absolute;
+}
+
 .chooseEgg {
   background-image: url("../images/chooseEgg.png");
   position: absolute;
@@ -494,6 +598,20 @@ body{
   width: 155px;
   height: 201px;
   z-index: 5;
+}
+
+.chooseKernel:after{
+  content: '';
+  background-image: url(../images/chooseTrue.png);
+  background-size: 100% 100%;
+  font-size: 14px;
+  height: 13px;
+  width: 20px;
+  color: #fff;
+  text-align: center;
+  top: 179px;
+  left: 6px;
+  position: absolute;
 }
 
 .dou4 {
@@ -608,6 +726,20 @@ body{
   height: 194px;
 }
 
+.choosesweetened:after{
+  content: '';
+  background-image: url(../images/chooseTrue.png);
+  background-size: 100% 100%;
+  font-size: 14px;
+  height: 13px;
+  width: 20px;
+  color: #fff;
+  text-align: center;
+  top: 174px;
+  left: 14px;
+  position: absolute;
+}
+
 .chooseGlowworm {
   background-image: url("../images/chooseGlowworm.png");
   position: absolute;
@@ -656,16 +788,17 @@ body{
 /*excl page*/
 
 .excl-page{
-  transition: 1s;
-  transform: translate3d(0, -100%, 0);
-}
-
-.excl-page.active{
+  transition: .5s;
+  transform: translate3d(-100%, 0, 0);
   height:100%;
   width:100%;
   position: absolute;
   top:0;
   left:0;
+  overflow: hidden;
+}
+
+.excl-page.active{
   background: rgba(0,0,0,.5);
   transform: translate3d(0, 0, 0);
   z-index: 600;
@@ -881,6 +1014,7 @@ body{
 .lottery-page{
   height:100%;
   width:100%;
+  overflow: hidden;
   position: absolute;
   top:0;
   left:0;
