@@ -816,6 +816,7 @@ body{
   height: 601px;
   z-index: 173;
 }
+
 .exclButton {
   background-image: url("../images/exclButton.png");
   position: absolute;
@@ -826,188 +827,59 @@ body{
   z-index: 172;
 }
 
-.exclDou{
-  border-radius: 6px 6px 0 0;
+ul {
+  list-style: none;
+}
+
+.rect {
+  position: absolute;
+  bottom: 50px;
+  left: 47px;
+  width: 100%;
+}
+
+.rect-item {
+  position: absolute;
+  bottom: 0;
+  width: 45px;
+  background-color: red;
+}
+
+.rect-item:nth-child(1){
   background-color: rgb(237, 17, 100);
-  position: absolute;
-  left: 46px;
-  top: 453px;
-  width: 47px;
-  height: 97px;
 }
 
-.exclKernel{
-  border-radius: 6px 6px 0 0;
-  background-color: rgb(255, 123, 172);
-  position: absolute;
-  left: 110px;
-  top: 413px;
-  width: 47px;
-  height: 137px;
-}
-
-.exclIce {
-  border-radius: 6px 6px 0 0;
+.rect-item:nth-child(2){
   background-color: rgb(171, 74, 156);
-  position: absolute;
-  left: 570px;
-  top: 109px;
-  width: 47px;
-  height: 442px;
-  z-index: 175;
 }
-.exclFruits {
-  border-radius: 6px 6px 0 0;
+
+.rect-item:nth-child(3){
   background-color: rgb(0, 154, 194);
-  position: absolute;
-  left: 502px;
-  top: 156px;
-  width: 47px;
-  height: 395px;
-  z-index: 174;
 }
-.exclOther {
-  border-radius: 6px 6px 0 0;
+
+.rect-item:nth-child(4){
   background-color: rgb(95, 196, 226);
-  position: absolute;
-  left: 435px;
-  top: 197px;
-  width: 47px;
-  height: 354px;
-  z-index: 173;
 }
-.exclZao {
-  border-radius: 6px 6px 0 0;
+
+.rect-item:nth-child(5){
   background-color: rgb(98, 188, 110);
-  position: absolute;
-  left: 371px;
-  top: 243px;
-  width: 47px;
-  height: 308px;
-  z-index: 172;
 }
-.exclEgg {
-  border-radius: 6px 6px 0 0;
+
+.rect-item:nth-child(6){
   background-color: rgb(159, 188, 46);
-  position: absolute;
-  left: 303px;
-  top: 273px;
-  width: 47px;
-  height: 278px;
-  z-index: 171;
 }
-.exclLotus {
-  border-radius: 6px 6px 0 0;
+
+.rect-item:nth-child(7){
+  background-color: rgb(159, 188, 46);
+}
+
+.rect-item:nth-child(8){
   background-color: rgb(253, 172, 19);
-  position: absolute;
-  left: 236px;
-  top: 321px;
-  width: 47px;
-  height: 229px;
-  z-index: 170;
 }
 
-.exclXian {
-  border-radius: 6px 6px 0 0;
+.rect-item:nth-child(9){
   background-color: rgb(246, 139, 31);
-  position: absolute;
-  left: 170px;
-  top: 367px;
-  width: 47px;
-  height: 183px;
-  z-index: 176;
 }
-
-.exclDou:after{
-  content: '1398';
-  font-size: 14px;
-  width: 47px;
-  color: #fff;
-  text-align: center;
-  top: -28px;
-  position: absolute;
-}
-
-.exclKernel:after{
-  content: '1398';
-  font-size: 14px;
-  width: 47px;
-  color: #fff;
-  text-align: center;
-  top: -28px;
-  position: absolute;
-}
-
-.exclIce:after{
-  content: '1398';
-  font-size: 14px;
-  width: 47px;
-  color: #fff;
-  text-align: center;
-  top: -28px;
-  position: absolute;
-}
-
-.exclFruits:after{
-  content: '1398';
-  font-size: 14px;
-  width: 47px;
-  color: #fff;
-  text-align: center;
-  top: -28px;
-  position: absolute;
-}
-
-.exclOther:after{
-  content: '1398';
-  font-size: 14px;
-  width: 47px;
-  color: #fff;
-  text-align: center;
-  top: -28px;
-  position: absolute;
-}
-
-.exclZao:after{
-  content: '1398';
-  font-size: 14px;
-  width: 47px;
-  color: #fff;
-  text-align: center;
-  top: -28px;
-  position: absolute;
-}
-
-.exclEgg:after{
-  content: '1398';
-  font-size: 14px;
-  width: 47px;
-  color: #fff;
-  text-align: center;
-  top: -28px;
-  position: absolute;
-}
-
-.exclLotus:after{
-  content: '1398';
-  font-size: 14px;
-  width: 47px;
-  color: #fff;
-  text-align: center;
-  top: -28px;
-  position: absolute;
-}
-
-.exclXian:after{
-  content: '1398';
-  font-size: 14px;
-  width: 47px;
-  color: #fff;
-  text-align: center;
-  top: -28px;
-  position: absolute;
-}
-
 
 /**/
 

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>gogogo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .box {
+      position: relative;
+      height: 600px;
+    }
+
+    .rect {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    .rect-item {
+      position: absolute;
+      bottom: 0;
+      width: 30px;
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <ul class="rect">
+      <li class="rect-item"></li>
+      <li class="rect-item"></li>
+      <li class="rect-item"></li>
+      <li class="rect-item"></li>
+      <li class="rect-item"></li>
+    </ul>
+  </div>
+  <!--  -->
+  <script src="./script/jquery-3.2.0.min.js"></script>
+  <script>
+    var hs = [40, 80, 120, 160, 200]
+    var rect_list = $('.rect-item');
+    rect_list.each(function (index, item) {
+      $(this).css({
+        left: index * 40
+      })
+      $(this).animate({
+        height: hs[index],
+      }, 1000)
+    })
+  </script>
+</body>
+
+</html>
