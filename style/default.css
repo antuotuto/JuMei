@@ -243,7 +243,7 @@ body{
   background-image: url("../images/fruits1.png");
   position: absolute;
   left: 647px;
-  top: 705px;
+  top: 655px;
   width: 29px;
   height: 29px;
   display: none;
@@ -252,7 +252,7 @@ body{
   background-image: url("../images/fruits2.png");
   position: absolute;
   left: 625px;
-  top: 722px;
+  top: 672px;
   width: 25px;
   height: 25px;
   display: none;
@@ -261,7 +261,7 @@ body{
   background-image: url("../images/fruits3.png");
   position: absolute;
   left: 665px;
-  top: 673px;
+  top: 623px;
   width: 29px;
   height: 31px;
   display: none;
@@ -270,7 +270,7 @@ body{
   background-image: url("../images/fruits4.png");
   position: absolute;
   left: 666px;
-  top: 645px;
+  top: 595px;
   width: 27px;
   height: 27px;
   display: none;
@@ -279,7 +279,7 @@ body{
   background-image: url("../images/fruits5.png");
   position: absolute;
   left: 595px;
-  top: 731px;
+  top: 681px;
   width: 28px;
   height: 28px;
   display: none;
@@ -288,7 +288,7 @@ body{
   background-image: url("../images/fruits6.png");
   position: absolute;
   left: 566px;
-  top: 723px;
+  top: 673px;
   width: 28px;
   height: 28px;
   display: none;
@@ -347,7 +347,7 @@ body{
   background-image: url("../images/chooseOk.png");
   position: absolute;
   left: 171px;
-  top: 1137px;
+  top: 1040px;
   width: 380px;
   height: 89px;
 }
@@ -357,7 +357,7 @@ body{
   background-repeat: repeat-y;
   position: absolute;
   left: 524px;
-  top: 833px;
+  top: 783px;
   width: 157px;
   height: 202px;
 }
@@ -380,7 +380,7 @@ body{
   background-image: url("../images/chooseZao.png");
   position: absolute;
   left: 306px;
-  top: 387px;
+  top: 337px;
   width: 147px;
   height: 194px;
 }
@@ -403,7 +403,7 @@ body{
   background-image: url("../images/lotus.png");
   position: absolute;
   left: 394px;
-  top: 941px;
+  top: 901px;
   width: 24px;
   height: 33px;
 }
@@ -412,7 +412,7 @@ body{
   background-image: url("../images/chooseLotus.png");
   position: absolute;
   left: 307px;
-  top: 836px;
+  top: 796px;
   width: 145px;
   height: 194px;
 }
@@ -435,7 +435,7 @@ body{
   background-image: url("../images/iceCream.png");
   position: absolute;
   left: 155px;
-  top: 909px;
+  top: 859px;
   width: 51px;
   height: 70px;
   display: none;
@@ -473,7 +473,7 @@ body{
   background-image: url("../images/chooseIce.png");
   position: absolute;
   left: 69px;
-  top: 836px;
+  top: 786px;
   width: 155px;
   height: 194px;
 }
@@ -496,7 +496,7 @@ body{
   background-image: url("../images/chooseFruits.png");
   position: absolute;
   left: 541px;
-  top: 610px;
+  top: 560px;
   width: 145px;
   height: 194px;
 }
@@ -519,7 +519,7 @@ body{
   background-image: url("../images/chooseXian.png");
   position: absolute;
   left: 307px;
-  top: 606px;
+  top: 556px;
   width: 148px;
   height: 194px;
 }
@@ -542,7 +542,7 @@ body{
   background-image: url("../images/chooseEggB.png");
   position: absolute;
   left: 68px;
-  top: 606px;
+  top: 556px;
   width: 155px;
   height: 194px;
 }
@@ -565,7 +565,7 @@ body{
   background-image: url("../images/chooseEgg.png");
   position: absolute;
   left: 128px;
-  top: 722px;
+  top: 672px;
   width: 78px;
   height: 29px;
   display: none;
@@ -598,7 +598,7 @@ body{
   background-image: url("../images/chooseKernel.png");
   position: absolute;
   left: 68px;
-  top: 380px;
+  top: 330px;
   width: 155px;
   height: 201px;
   z-index: 5;
@@ -622,7 +622,7 @@ body{
   background-image: url("../images/dou4.png");
   position: absolute;
   left: 203px;
-  top: 434px;
+  top: 384px;
   width: 57px;
   height: 58px;
   display: none;
@@ -631,7 +631,7 @@ body{
   background-image: url("../images/dou3.png");
   position: absolute;
   left: 69px;
-  top: 415px;
+  top: 365px;
   width: 28px;
   height: 40px;
   display: none;
@@ -640,7 +640,7 @@ body{
   background-image: url("../images/dou1.png");
   position: absolute;
   left: 206px;
-  top: 415px;
+  top: 365px;
   width: 31px;
   height: 33px;
   display: none;
@@ -728,7 +728,7 @@ body{
   background-image: url("../images/choosesweetened.png");
   position: absolute;
   left: 539px;
-  top: 387px;
+  top: 337px;
   width: 149px;
   height: 194px;
 }
@@ -779,7 +779,7 @@ body{
   background-size: 100% 100%;
   position: absolute;
   left: 58px;
-  top: 322px;
+  top: 272px;
   height:23px;
   width:633px;
 }
@@ -821,7 +821,7 @@ body{
   background-image: url("../images/exclButton.png");
   position: absolute;
   left: 171px;
-  top: 1110px;
+  top: 1040px;
   width: 380px;
   height: 89px;
   z-index: 172;
