@@ -95,9 +95,9 @@
   <div class="lottery-page" id="lotteryPage">
     <div class="lotteryGlowworm2"></div>
     <div class="lotteryGlowworm1"></div>
-    <div class="lotteryMoon"></div>
+    <div class="lotteryMoon animated fadeInDown delay_200ms"></div>
     <div class="lotteryWintersweet animated fadeInLeft delay_400ms"></div>
-    <div class="lotteryTree" id="lotteryTree"></div>
+    <div class="lotteryTree animated fadeInRight delay_400ms" id="lotteryTree"></div>
     <div class="lotteryYun2"></div>
     <div class="lotteryYun1"></div>
     <div class="lotteryDeng2 animated fadeInUp delay_200ms"></div>
@@ -105,15 +105,42 @@
     <div class="lotteryDeng3 animated fadeInUp delay_400ms"></div>
     <div class="lotteryDeng5 animated fadeInUp delay_500ms"></div>
     <div class="lotteryDeng1 animated fadeInUp delay_600ms"></div>
-    <div class="lotteryBing9 animated fadeInDown delay_900ms"></div>
-    <div class="lotteryBing8 animated fadeInDown delay_900ms"></div>
-    <div class="lotteryBing7 animated fadeInDown delay_800ms"></div>
-    <div class="lotteryBing6 animated fadeInDown delay_700ms"></div>
-    <div class="lotteryBing5 animated fadeInDown delay_600ms"></div>
-    <div class="lotteryBing4 animated fadeInDown delay_500ms"></div>
-    <div class="lotteryBing3 animated fadeInDown delay_400ms"></div>
-    <div class="lotteryBing2 animated fadeInDown delay_300ms"></div>
-    <div class="lotteryBing1 animated fadeInDown delay_200ms"></div>
+    <div class="wrap lotteryBing9-map animated fadeInDown delay_300ms">
+      <div class="lotteryBing9 front"></div>
+      <div class="lotteryBing99 back"></div>
+    </div>
+    <div class="wrap lotteryBing8-map animated fadeInDown delay_300ms">
+      <div class="lotteryBing8 front"></div>
+      <div class="lotteryBing88 back"></div>
+    </div>
+    <div class="wrap lotteryBing7-map animated fadeInDown delay_300ms">
+      <div class="lotteryBing7 front"></div>
+      <div class="lotteryBing77 back"></div>
+    </div>
+    <div class="wrap lotteryBing6-map animated fadeInDown delay_300ms">
+      <div class="lotteryBing6 front"></div>
+      <div class="lotteryBing66 back"></div>
+    </div>
+    <div class="wrap lotteryBing5-map animated fadeInDown delay_300ms">
+      <div class="lotteryBing5 front"></div>
+      <div class="lotteryBing55 back"></div>
+    </div>
+    <div class="wrap lotteryBing4-map animated fadeInDown delay_300ms">
+      <div class="lotteryBing4 front"></div>
+      <div class="lotteryBing44 back"></div>
+    </div>
+    <div class="wrap lotteryBing3-map animated fadeInDown delay_300ms">
+      <div class="lotteryBing3 front"></div>
+      <div class="lotteryBing33 back"></div>
+    </div>
+    <div class="wrap lotteryBing2-map animated fadeInDown delay_300ms">
+      <div class="lotteryBing2 front"></div>
+      <div class="lotteryBing22 back"></div>
+    </div>
+    <div class="wrap lotteryBing1-map animated fadeInDown delay_200ms">
+      <div class="lotteryBing1 front"></div>
+      <div class="lotteryBing11 back "></div>
+    </div>
     <div class="lotteryChoose animated fadeInUp delay_300ms"></div>
     <div class="lotteryLove animated fadeInUp delay_500ms"></div>
     <!-- <div class="lotteryOk"></div> -->
@@ -175,6 +202,10 @@
     $('#lotteryTree').click(function() {
       $("#winPage").addClass("active");
       $(".star").addClass("active");
+    })
+
+    $('.wrap').click(function() {
+      $(".wrap").addClass("active");
     })
 
 

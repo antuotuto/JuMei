@@ -1057,6 +1057,7 @@ body{
   top: 235px;
   width: 102px;
   height: 42px;
+  animation: endSCloud 10s infinite;
 }
 .lotteryYun1 {
   background-image: url("../images/lotteryYun1.png");
@@ -1065,6 +1066,7 @@ body{
   top: 487px;
   width: 102px;
   height: 42px;
+  animation: endSCloudT 10s infinite;
 }
 .lotteryDeng2 {
   background-image: url("../images/lotteryDeng2.png");
@@ -1124,78 +1126,168 @@ body{
   height: 986px;
   animation: arrow2 1.5s infinite ease-in-out;
 }
+
+.lotteryBing9-map{
+  position: absolute;
+  left: 537px;
+  top: 889px;
+}
+
 .lotteryBing9 {
   background-image: url("../images/lotteryBing9.png");
-  position: absolute;
-  left: 537px;
-  top: 889px;
-  width: 145px;
-  height: 143px;
 }
+
+.lotteryBing99 {
+  background-image: url("../images/lotteryBing99.png");
+}
+
+.lotteryBing8-map{
+  position: absolute;
+  left: 307px;
+  top: 889px;
+}
+
 .lotteryBing8 {
   background-image: url("../images/lotteryBing8.png");
-  position: absolute;
-  left: 307px;
-  top: 889px;
-  width: 145px;
-  height: 143px;
 }
+
+.lotteryBing88 {
+  background-image: url("../images/lotteryBing88.png");
+}
+
+.lotteryBing7-map{
+  position: absolute;
+  left: 79px;
+  top: 889px;
+}
+
 .lotteryBing7 {
   background-image: url("../images/lotteryBing7.png");
-  position: absolute;
-  left: 79px;
-  top: 889px;
-  width: 145px;
-  height: 143px;
 }
+
+.lotteryBing77 {
+  background-image: url("../images/lotteryBing77.png");
+}
+
+.lotteryBing6-map{
+  position: absolute;
+  left: 537px;
+  top: 689px;
+}
+
 .lotteryBing6 {
   background-image: url("../images/lotteryBing6.png");
-  position: absolute;
-  left: 537px;
-  top: 689px;
-  width: 145px;
-  height: 143px;
 }
+
+.lotteryBing66 {
+  background-image: url("../images/lotteryBing66.png");
+}
+
+.lotteryBing5-map{
+  position: absolute;
+  left: 307px;
+  top: 689px;
+}
+
 .lotteryBing5 {
   background-image: url("../images/lotteryBing5.png");
-  position: absolute;
-  left: 307px;
-  top: 689px;
-  width: 145px;
-  height: 143px;
 }
-.lotteryBing4 {
-  background-image: url("../images/lotteryBing4.png");
+
+.lotteryBing55 {
+  background-image: url("../images/lotteryBing55.png");
+}
+
+.lotteryBing4-map{
   position: absolute;
   left: 79px;
   top: 689px;
-  width: 145px;
-  height: 143px;
 }
-.lotteryBing3 {
-  background-image: url("../images/lotteryBing3.png");
+
+.lotteryBing4 {
+  background-image: url("../images/lotteryBing4.png");
+}
+
+.lotteryBing44 {
+  background-image: url("../images/lotteryBing44.png");
+}
+
+.lotteryBing3-map{
   position: absolute;
   left: 537px;
   top: 490px;
-  width: 145px;
-  height: 143px;
 }
-.lotteryBing2 {
-  background-image: url("../images/lotteryBing2.png");
+
+.lotteryBing3 {
+  background-image: url("../images/lotteryBing3.png");
+}
+
+.lotteryBing33 {
+  background-image: url("../images/lotteryBing33.png");
+}
+
+.lotteryBing2-map{
   position: absolute;
   left: 307px;
   top: 490px;
-  width: 145px;
-  height: 143px;
 }
-.lotteryBing1 {
-  background-image: url("../images/lotteryBing1.png");
+
+.lotteryBing2 {
+  background-image: url("../images/lotteryBing2.png");
+}
+
+.lotteryBing22 {
+  background-image: url("../images/lotteryBing22.png");
+}
+
+.lotteryBing1-map{
   position: absolute;
   left: 79px;
   top: 490px;
+}
+
+.lotteryBing1 {
+  background-image: url("../images/lotteryBing1.png");
+}
+
+.lotteryBing11{
+  background-image: url("../images/lotteryBing11.png");
+}
+
+.wrap{
   width: 145px;
   height: 143px;
 }
+
+.front,
+.back {
+  backface-visibility: hidden;
+  transition: 1s;
+  width: 145px;
+  height: 143px;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.front {
+  z-index: 2;
+}
+
+.back {
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+.wrap.active .front {
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+.wrap.active .back {
+  transform: rotateY(360deg);
+  z-index: 2;
+}
+
 
 .lotteryChoose{
   background-image: url("../images/lotteryChoose.png");
