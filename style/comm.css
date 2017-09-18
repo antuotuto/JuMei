@@ -361,7 +361,7 @@ body{
   height: 202px;
 }
 
-.chooseOther:after{
+.chooseOther.active:after{
   content: '';
   background-image: url(../images/chooseTrue.png);
   background-size: 100% 100%;
@@ -384,7 +384,7 @@ body{
   height: 194px;
 }
 
-.chooseZao:after{
+.chooseZao.active:after{
   content: '';
   background-image: url(../images/chooseTrue.png);
   background-size: 100% 100%;
@@ -416,7 +416,7 @@ body{
   height: 194px;
 }
 
-.chooseLotus:after{
+.chooseLotus.active:after{
   content: '';
   background-image: url(../images/chooseTrue.png);
   background-size: 100% 100%;
@@ -477,7 +477,7 @@ body{
   height: 194px;
 }
 
-.chooseIce:after{
+.chooseIce.active:after{
   content: '';
   background-image: url(../images/chooseTrue.png);
   background-size: 100% 100%;
@@ -500,7 +500,7 @@ body{
   height: 194px;
 }
 
-.chooseFruits:after{
+.chooseFruits.active:after{
   content: '';
   background-image: url(../images/chooseTrue.png);
   background-size: 100% 100%;
@@ -523,7 +523,7 @@ body{
   height: 194px;
 }
 
-.chooseXian:after{
+.chooseXian.active:after{
   content: '';
   background-image: url(../images/chooseTrue.png);
   background-size: 100% 100%;
@@ -546,7 +546,7 @@ body{
   height: 194px;
 }
 
-.chooseEggB:after{
+.chooseEggB.active:after{
   content: '';
   background-image: url(../images/chooseTrue.png);
   background-size: 100% 100%;
@@ -603,7 +603,7 @@ body{
   z-index: 5;
 }
 
-.chooseKernel:after{
+.chooseKernel.active:after{
   content: '';
   background-image: url(../images/chooseTrue.png);
   background-size: 100% 100%;
@@ -732,7 +732,7 @@ body{
   height: 194px;
 }
 
-.choosesweetened:after{
+.choosesweetened.active:after{
   content: '';
   background-image: url(../images/chooseTrue.png);
   background-size: 100% 100%;
@@ -1669,7 +1669,97 @@ body{
 
 
 
+.sorry-page {
+  background-image: url("../images/sorry.png");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 750px;
+  height: 1334px;
+  z-index: 3;
+  display: none;
+}
 
+.true-page{
+  background-image: url("../images/trueA.png");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 750px;
+  height: 1334px;
+  z-index: 3;
+  display: none;
+}
+
+.wait-page{
+  background-image: url("../images/wait.png");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 750px;
+  height: 1334px;
+  z-index: 3;
+  display: none;
+}
+
+.address-page{
+  background-image: url("../images/address.png");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 750px;
+  height: 1334px;
+  z-index: 3;
+  display: none;
+}
+
+.UserName{
+  position: absolute;
+  left: 147.3px;
+  top: 505.67px;
+  width: 360px;
+  background: #edcd84;
+  border: 0;
+  outline: none;
+  font-size: 25px;
+  color: #b74700;
+}
+
+.UserPhone{
+  position: absolute;
+  left: 147.3px;
+  top: 629.129px;
+  width: 360px;
+  background: #edcd84;
+  border: 0;
+  outline: none;
+  font-size: 25px;
+  color: #b74700;
+}
+
+.UserAddress{
+  position: absolute;
+  left: 147.3px;
+  top: 745.889px;
+  width: 360px;
+  height:50px;
+  background: #edcd84;
+  border: 0;
+  outline: none;
+  font-size: 25px;
+  color: #b74700;
+  resize: none;
+}
+
+.UserMessage {
+  background-image: url("../images/UserMessage.png");
+  position: absolute;
+  left: 191px;
+  top: 914px;
+  width: 380px;
+  height: 89px;
+  z-index: 23;
+}
 
 
 

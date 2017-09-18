@@ -50,15 +50,15 @@
       <div class="chooseLantern2 animated fadeInUp delay_300ms"></div>
       <div class="chooseLantern3 animated fadeInUp delay_400ms"></div>
       <div class="chooseLantern4 animated fadeInUp delay_500ms"></div>
-      <div class="chooseKernel animated fadeInUp delay_200ms" id="chooseKernel"></div>
-      <div class="chooseZao animated fadeInUp delay_300ms"></div>
-      <div class="choosesweetened animated fadeInUp delay_400ms"></div>
-      <div class="chooseEggB animated fadeInUp delay_500ms"></div>
-      <div class="chooseXian animated fadeInUp delay_600ms"></div>
-      <div class="chooseFruits animated fadeInUp delay_700ms"></div>
-      <div class="chooseIce animated fadeInUp delay_800ms"></div>
-      <div class="chooseLotus animated fadeInUp delay_900ms"></div>
-      <div class="chooseOther animated fadeInUp delay_900ms"></div>
+      <div class="chooseKernel chooseWarp animated fadeInUp delay_200ms" id="chooseKernel"></div>
+      <div class="chooseZao chooseWarp animated fadeInUp delay_300ms"></div>
+      <div class="choosesweetened chooseWarp animated fadeInUp delay_400ms"></div>
+      <div class="chooseEggB chooseWarp animated fadeInUp delay_500ms"></div>
+      <div class="chooseXian chooseWarp animated fadeInUp delay_600ms"></div>
+      <div class="chooseFruits chooseWarp animated fadeInUp delay_700ms"></div>
+      <div class="chooseIce chooseWarp animated fadeInUp delay_800ms"></div>
+      <div class="chooseLotus chooseWarp animated fadeInUp delay_900ms"></div>
+      <div class="chooseOther chooseWarp animated fadeInUp delay_900ms"></div>
       <div class="iceCream"></div>
       <div class="fruits1"></div>
       <div class="fruits2"></div>
@@ -150,6 +150,20 @@
     <div class="star"></div>
   </div>
 
+  <div class="sorry-page animated bounceInDown delay_900ms" id="sorryPage"></div>
+
+  <div class="true-page animated bounceInDown delay_900ms" id="truePage"></div>
+
+  <div class="wait-page animated bounceInDown delay_900ms" id="waitPage"></div>
+
+  <div class="address-page animated bounceInDown delay_900ms" id="addressPage">
+    <form action="">
+      <input type="text" class="UserName">
+      <input type="text" class="UserPhone">
+      <textarea name="name" rows="8" cols="80" class="UserAddress"></textarea>
+    </form>
+    <div class="UserMessage" id="UserMessage"></div>
+  </div>
 
 
 
@@ -201,8 +215,21 @@
       $(".star").addClass("active");
     })
 
+    $('.chooseWarp').click(function(e) {
+      $('.chooseWarp').removeClass("active");
+      $(e.target).addClass("active");
+    })
+
     $('.wrap').click(function(e) {
       $(e.target).parent().addClass("active");
+      // $("#sorryPage").show();
+      // $("#truePage").show();
+      // $("#waitPage").show();
+      $("#addressPage").show();
+    })
+
+    $("#UserMessage").click(function(){
+      console.log("正确提交");
     })
   </script>
 </body>
