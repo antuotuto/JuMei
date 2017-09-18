@@ -153,9 +153,6 @@
 
 
 
-
-
-
   <script type=text/javascript>
     $('#fristButton').click(function() {
       $("#endPage").addClass("active");
@@ -204,8 +201,8 @@
       $(".star").addClass("active");
     })
 
-    $('.wrap').click(function() {
-      $(".wrap").addClass("active");
+    $('.wrap').click(function(e) {
+      $(e.target).parent().addClass("active");
     })
   </script>
 </body>
