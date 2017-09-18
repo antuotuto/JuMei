@@ -206,13 +206,13 @@
 
     $('#chooseOk').click(function() {
       if (question === "") {
-          return
+        return
       } else {
         $("#choosePage").addClass("OnActive");
         $("#exclPage").show();
-        var hs = [60, 130, 220, 300, 350,400,450,500,550]
+        var hs = [60, 130, 220, 300, 350, 400, 450, 500, 550]
         var rect_list = $('.rect-item');
-        rect_list.each(function (index, item) {
+        rect_list.each(function(index, item) {
           $(this).css({
             left: index * 65
           })
