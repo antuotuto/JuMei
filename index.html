@@ -132,7 +132,7 @@
   <script type=text/javascript>
     $('#fristButton').click(function() {
       $("#endPage").addClass("active");
-      $("#choosePage").addClass("active");
+      $("#choosePage").show()
       $(".dou1").addClass("active");
       $(".dou3").addClass("active");
       $(".dou4").addClass("active");
@@ -149,10 +149,11 @@
 
     $('#chooseOk').click(function() {
       $("#choosePage").addClass("OnActive");
-      $("#exclPage").addClass("active");
+      $("#exclPage").show();
     })
 
     $('#exclButton').click(function() {
+      $("#lotteryPage").show()
       $("#choosePage").removeClass("active");
       $("#exclPage").removeClass("active");
       $("#lotteryPage").addClass("active");
@@ -162,7 +163,6 @@
       $("#winPage").addClass("active");
       $(".star").addClass("active");
     })
-
 
 
 
