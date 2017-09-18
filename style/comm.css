@@ -196,6 +196,7 @@ body{
   top: 256px;
   width: 102px;
   height: 42px;
+  animation: endSCloud 10s infinite;
 }
 .chooseCloud2 {
   background-image: url("../images/endSCloud.png");
@@ -204,6 +205,7 @@ body{
   top: 429px;
   width: 102px;
   height: 42px;
+  animation: endSCloudT 10s infinite;
 }
 .chooseLantern1 {
   background-image: url("../images/chooseLantern1.png");
@@ -244,6 +246,7 @@ body{
   top: 705px;
   width: 29px;
   height: 29px;
+  display: none;
 }
 .fruits2 {
   background-image: url("../images/fruits2.png");
@@ -252,6 +255,7 @@ body{
   top: 722px;
   width: 25px;
   height: 25px;
+  display: none;
 }
 .fruits3 {
   background-image: url("../images/fruits3.png");
@@ -260,6 +264,7 @@ body{
   top: 673px;
   width: 29px;
   height: 31px;
+  display: none;
 }
 .fruits4 {
   background-image: url("../images/fruits4.png");
@@ -268,6 +273,7 @@ body{
   top: 645px;
   width: 27px;
   height: 27px;
+  display: none;
 }
 .fruits5 {
   background-image: url("../images/fruits5.png");
@@ -276,6 +282,7 @@ body{
   top: 731px;
   width: 28px;
   height: 28px;
+  display: none;
 }
 .fruits6 {
   background-image: url("../images/fruits6.png");
@@ -284,6 +291,7 @@ body{
   top: 723px;
   width: 28px;
   height: 28px;
+  display: none;
 }
 
 .fruits1.active{
@@ -429,6 +437,7 @@ body{
   top: 909px;
   width: 51px;
   height: 70px;
+  display: none;
 }
 
 .iceCream.active{
@@ -558,6 +567,7 @@ body{
   top: 722px;
   width: 78px;
   height: 29px;
+  display: none;
 }
 
 .chooseEgg.active{
@@ -614,6 +624,7 @@ body{
   top: 434px;
   width: 57px;
   height: 58px;
+  display: none;
 }
 .dou3 {
   background-image: url("../images/dou3.png");
@@ -622,6 +633,7 @@ body{
   top: 415px;
   width: 28px;
   height: 40px;
+  display: none;
 }
 .dou1 {
   background-image: url("../images/dou1.png");
@@ -630,6 +642,7 @@ body{
   top: 415px;
   width: 31px;
   height: 33px;
+  display: none;
 }
 
 .dou3.active{
@@ -740,6 +753,7 @@ body{
   top: -420px;
   width: 1133px;
   height: 939px;
+  animation: arrow 1.5s infinite ease-in-out;
 }
 .chooseMoon {
   background-image: url("../images/chooseMoon.png");

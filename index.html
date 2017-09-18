@@ -14,7 +14,7 @@
 
 <body>
   <div class="content-box">
-    <div class="end-page" id="endPage">
+    <div class="end-page animated pulse" id="endPage">
       <div class="end-cloud1 animated fadeInDown delay_100ms"></div>
       <div class="end-cloud4 animated fadeInRight delay_100ms"></div>
       <div class="end-cloud3 animated fadeInDown delay_100ms"></div>
@@ -39,41 +39,41 @@
       <div class="endPoet animated fadeInRight delay_600ms"></div>
     </div>
 
-    <div class="choose-Page" id="choosePage">
-      <div class="chooseOk" id="chooseOk"></div>
+    <div class="choose-Page animated pulse" id="choosePage">
+      <div class="chooseOk animated fadeInUp delay_900ms" id="chooseOk"></div>
       <div class="chooseGlowworm"></div>
-      <div class="chooseTree"></div>
+      <div class="chooseWintersweet animated fadeInLeft delay_400ms"></div>
+      <div class="chooseTree animated fadeInRight delay_400ms"></div>
       <div class="chooseCloud1"></div>
       <div class="chooseCloud2"></div>
-      <div class="chooseLantern1"></div>
-      <div class="chooseLantern2"></div>
-      <div class="chooseLantern3"></div>
-      <div class="chooseLantern4"></div>
-      <div class="chooseOther"></div>
-      <div class="chooseZao"></div>
-      <div class="chooseLotus"></div>
-      <div class="chooseIce"></div>
+      <div class="chooseLantern1 animated fadeInUp delay_200ms"></div>
+      <div class="chooseLantern2 animated fadeInUp delay_300ms"></div>
+      <div class="chooseLantern3 animated fadeInUp delay_400ms"></div>
+      <div class="chooseLantern4 animated fadeInUp delay_500ms"></div>
+      <div class="chooseKernel animated fadeInUp delay_200ms" id="chooseKernel"></div>
+      <div class="chooseZao animated fadeInUp delay_300ms"></div>
+      <div class="choosesweetened animated fadeInUp delay_400ms"></div>
+      <div class="chooseEggB animated fadeInUp delay_500ms"></div>
+      <div class="chooseXian animated fadeInUp delay_600ms"></div>
+      <div class="chooseFruits animated fadeInUp delay_700ms"></div>
+      <div class="chooseIce animated fadeInUp delay_800ms"></div>
+      <div class="chooseLotus animated fadeInUp delay_900ms"></div>
+      <div class="chooseOther animated fadeInUp delay_900ms"></div>
       <div class="iceCream"></div>
-      <div class="chooseFruits"></div>
       <div class="fruits1"></div>
       <div class="fruits2"></div>
       <div class="fruits3"></div>
       <div class="fruits4"></div>
       <div class="fruits5"></div>
       <div class="fruits6"></div>
-      <div class="chooseXian"></div>
-      <div class="chooseEggB"></div>
       <div class="chooseEgg"></div>
       <div class="dou4"></div>
       <div class="dou3"></div>
       <div class="dou1"></div>
       <div class="lotus"></div>
-      <div class="chooseKernel" id="chooseKernel"></div>
-      <div class="choosesweetened"></div>
-      <div class="chooseMoon"></div>
-      <div class="chooseWintersweet"></div>
-      <div class="chooseWhat"></div>
-      <div class="chooseBing"></div>
+      <div class="chooseMoon animated fadeInDown delay_400ms"></div>
+      <div class="chooseWhat animated fadeInUp delay_300ms"></div>
+      <div class="chooseBing animated fadeInUp delay_200ms"></div>
     </div>
   </div>
 
@@ -136,8 +136,13 @@
       $(".dou1").addClass("active");
       $(".dou3").addClass("active");
       $(".dou4").addClass("active");
+      $('.dou1').delay(2000).show(0);
+      $('.dou3').delay(2000).show(0);
+      $('.dou4').delay(2000).show(0);
       $(".chooseEgg").addClass("active");
+      $('.chooseEgg').delay(2000).show(0);
       $(".iceCream").addClass("active");
+      $('.iceCream').delay(2000).show(0);
       $(".lotus").addClass("active");
       $(".fruits1").addClass("active");
       $(".fruits2").addClass("active");
@@ -145,6 +150,13 @@
       $(".fruits4").addClass("active");
       $(".fruits5").addClass("active");
       $(".fruits6").addClass("active");
+      $('.fruits1').delay(2000).show(0);
+      $('.fruits2').delay(2000).show(0);
+      $('.fruits3').delay(2000).show(0);
+      $('.fruits4').delay(2000).show(0);
+      $('.fruits5').delay(2000).show(0);
+      $('.fruits6').delay(2000).show(0);
+
     });
 
     $('#chooseOk').click(function() {
@@ -153,7 +165,9 @@
     })
 
     $('#exclButton').click(function() {
-      $("#lotteryPage").show()
+      $("#lotteryPage").show();
+      $("#choosePage").hide(0);
+      $("#exclPage").hide(0);
       $("#choosePage").removeClass("active");
       $("#exclPage").removeClass("active");
       $("#lotteryPage").addClass("active");
