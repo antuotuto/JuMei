@@ -1021,15 +1021,8 @@ body{
   position: absolute;
   top:0;
   left:0;
-  transition: 1s;
   background-image: url("../images/winBackground.png");
-  transform: translate3d(0, -100%, 0);
 }
-
-.lottery-page.active{
-  transform: translate3d(0, 0, 0);
-}
-
 
 .lotteryMoon {
   background-image: url("../images/chooseMoon.png");
