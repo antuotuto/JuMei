@@ -43,6 +43,7 @@
     <!--  -->
     <!-- 选择月饼页 -->
     <div class="choose-Page animated pulse" id="choosePage">
+      <!-- 选择喜欢的月饼 -->
       <ul>
         <li class="chooseKernel chooseWarp animated fadeInUp delay_200ms" id="chooseKernel"></li>
         <li class="chooseZao chooseWarp animated fadeInUp delay_300ms"></li>
@@ -54,6 +55,7 @@
         <li class="chooseLotus chooseWarp animated fadeInUp delay_900ms"></li>
         <li class="chooseOther chooseWarp animated fadeInUp delay_900ms"></li>
       </ul>
+      <!--  -->
       <div class="chooseWintersweet animated fadeInLeft delay_400ms"></div>
       <div class="chooseTree animated fadeInRight delay_400ms"></div>
       <div class="chooseCloud1"></div>
@@ -103,6 +105,7 @@
   <div class="lottery-page" id="lotteryPage">
     <div class="lotteryGlowworm1"></div>
     <div class="lotteryDeng3 animated fadeInUp delay_400ms"></div>
+    <!-- 月饼抽奖 -->
     <ul>
       <li class="wrap lotteryBing1-map animated fadeInDown delay_300ms wrapChange">
         <div class="lotteryBing1 front"></div>
@@ -141,6 +144,7 @@
         <div class="lotteryBing99 back"></div>
       </li>
     </ul>
+    <!--  -->
     <div class="lotteryGlowworm2"></div>
     <div class="lotteryMoon animated fadeInDown delay_200ms"></div>
     <div class="lotteryWintersweet animated fadeInLeft delay_400ms"></div>
@@ -174,15 +178,12 @@
     <div class="UserMessage" id="UserMessage"></div>
   </div>
   <!--  -->
-
-
-
   <script type=text/javascript>
     // 选择月饼
     var question = "";
     // 月饼抽奖
     var answer = "";
-    // 第一页的动画 后端不需要处理
+    // 首页到第二页的动画 后端不需要处理
     $('#fristButton').click(function() {
       $("#endPage").addClass("active");
       $("#choosePage").show()
@@ -229,9 +230,11 @@
         var rect_list = $('.rect-item');
         rect_list.each(function(index, item) {
           $(this).css({
+            // 向左平移的宽度
             left: index * 65
           })
           $(this).animate({
+            // 选择人数的高度
             height: hs[index],
           }, 2000)
         })

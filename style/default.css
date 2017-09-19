@@ -1,183 +1,590 @@
-html, body{height: 100%;}
-body{font:normal 16px/200% tohoma,helvetica,"Microsoft yahei"; color:#000;/*text-align:justify;text-justify:inter-ideograph;*/}
-body,p,ul,li,ol,h1,h2,h3,h4,h5,h6,dl,dt,dd,form,iframe{margin:0;padding:0;}
-ul,li,ol{list-style:none outside none;}
-img{border:0 none;vertical-align:top;width: 100%;}
-input,select{vertical-align:middle;}
-pre{white-space:normal;}
-.edge{margin:0 auto; }
-.clear{zoom:1;clear:both;}
-.clear:after{content:".";height:0;display:block;clear:both;visibility:hidden;font-size:0;}
-a{text-decoration:none;color:#333;}
-a:visited{color:#333;}
-a:hover,
-a:active{color:#999;}
-.fix{font-size:0;height:1px;}
-.fl{float:left;}
-.fr{float:right;}
-body{background:#fff;}
-.d-b{display:block;}
-.d-box{display:-webkit-box;display:-moz-box;display:box;}
-.flex1{-moz-box-flex: 1;-webkit-box-flex: 1;box-flex: 1;display:block;}
-.vcenter{-webkit-box-align: center;-moz-box-align: center;-ms-flex-align: center;-webkit-align-items: center;align-items: center;}
-.tcenter{-webkit-box-pack: center;-moz-box-pack: center;-ms-flex-pack: center;-webkit-justify-content: center;justify-content: center;}
-.v-box{-webkit-box-orient:vertical;box-orient:vertical;}
-.tc{text-align:center;}
-
-.delay_100ms{ -webkit-animation-delay:100ms; animation-delay:100ms; }
-.delay_200ms{ -webkit-animation-delay:200ms; animation-delay:200ms; }
-.delay_300ms{ -webkit-animation-delay:300ms; animation-delay:300ms; }
-.delay_400ms{ -webkit-animation-delay:400ms; animation-delay:400ms; }
-.delay_500ms{ -webkit-animation-delay:500ms; animation-delay:500ms; }
-.delay_600ms{ -webkit-animation-delay:600ms; animation-delay:600ms; }
-.delay_700ms{ -webkit-animation-delay:700ms; animation-delay:700ms; }
-.delay_800ms{ -webkit-animation-delay:800ms; animation-delay:800ms; }
-.delay_900ms{ -webkit-animation-delay:900ms; animation-delay:900ms; }
-.delay_1s{ -webkit-animation-delay:1s; animation-delay:1s; }
-.delay_1100ms{ -webkit-animation-delay:1.1s; animation-delay:1.1s; }
-.delay_1200ms{ -webkit-animation-delay:1.2s; animation-delay:1.2s; }
-.delay_1300ms{ -webkit-animation-delay:1.3s; animation-delay:1.3s; }
-.delay_1400ms{ -webkit-animation-delay:1.4s; animation-delay:1.4s; }
-.delay_1500ms{ -webkit-animation-delay:1.5s; animation-delay:1.5s; }
-.delay_1600ms{ -webkit-animation-delay:1.6s; animation-delay:1.6s; }
-.delay_1700ms{ -webkit-animation-delay:1.7s; animation-delay:1.7s; }
-.delay_1800ms{ -webkit-animation-delay:1.8s; animation-delay:1.8s; }
-.delay_1900ms{ -webkit-animation-delay:1.9s; animation-delay:1.9s; }
-.delay_2s{ -webkit-animation-delay:2s; animation-delay:2s; }
-.delay_2100ms{ -webkit-animation-delay:2.1s; animation-delay:2.1s; }
-.delay_2200ms{ -webkit-animation-delay:2.2s; animation-delay:2.2s; }
-.delay_2300ms{ -webkit-animation-delay:2.3s; animation-delay:2.3s; }
-.delay_2400ms{ -webkit-animation-delay:2.4s; animation-delay:2.4s; }
-.delay_2500ms{ -webkit-animation-delay:2.5s; animation-delay:2.5s; }
-.delay_2600ms{ -webkit-animation-delay:2.6s; animation-delay:2.6s; }
-.delay_2700ms{ -webkit-animation-delay:2.7s; animation-delay:2.7s; }
-.delay_2800ms{ -webkit-animation-delay:2.8s; animation-delay:2.8s; }
-.delay_2900ms{ -webkit-animation-delay:2.9s; animation-delay:2.9s; }
-.delay_3s{ -webkit-animation-delay:3s; animation-delay:3s; }
-.delay_3100ms{ -webkit-animation-delay:3.1s; animation-delay:3.1s; }
-.delay_3200ms{ -webkit-animation-delay:3.2s; animation-delay:3.2s; }
-.delay_3300ms{ -webkit-animation-delay:3.3s; animation-delay:3.3s; }
-.delay_3400ms{ -webkit-animation-delay:3.4s; animation-delay:3.4s; }
-.delay_3500ms{ -webkit-animation-delay:3.5s; animation-delay:3.5s; }
-.delay_3600ms{ -webkit-animation-delay:3.6s; animation-delay:3.6s; }
-.delay_3700ms{ -webkit-animation-delay:3.7s; animation-delay:3.7s; }
-.delay_3800ms{ -webkit-animation-delay:3.8s; animation-delay:3.8s; }
-.delay_3900ms{ -webkit-animation-delay:3.9s; animation-delay:3.9s; }
-.delay_4s{ -webkit-animation-delay:4s; animation-delay:4s; }
-.delay_4100ms{ -webkit-animation-delay:4.1s; animation-delay:4.1s; }
-.delay_4200ms{ -webkit-animation-delay:4.2s; animation-delay:4.2s; }
-.delay_4300ms{ -webkit-animation-delay:4.3s; animation-delay:4.3s; }
-.delay_4400ms{ -webkit-animation-delay:4.4s; animation-delay:4.4s; }
-.delay_4500ms{ -webkit-animation-delay:4.5s; animation-delay:4.5s; }
-.delay_4600ms{ -webkit-animation-delay:4.6s; animation-delay:4.6s; }
-.delay_4700ms{ -webkit-animation-delay:4.7s; animation-delay:4.7s; }
-.delay_4800ms{ -webkit-animation-delay:4.8s; animation-delay:4.8s; }
-.delay_4900ms{ -webkit-animation-delay:4.9s; animation-delay:4.9s; }
-.delay_5s{ -webkit-animation-delay:5s; animation-delay:5s; }
-.delay_5100ms{ -webkit-animation-delay:5.1s; animation-delay:5.1s; }
-.delay_5200ms{ -webkit-animation-delay:5.2s; animation-delay:5.2s; }
-.delay_5300ms{ -webkit-animation-delay:5.3s; animation-delay:5.3s; }
-.delay_5400ms{ -webkit-animation-delay:5.4s; animation-delay:5.4s; }
-.delay_5500ms{ -webkit-animation-delay:5.5s; animation-delay:5.5s; }
-.delay_5600ms{ -webkit-animation-delay:5.6s; animation-delay:5.6s; }
-.delay_5700ms{ -webkit-animation-delay:5.7s; animation-delay:5.7s; }
-.delay_5800ms{ -webkit-animation-delay:5.8s; animation-delay:5.8s; }
-.delay_5900ms{ -webkit-animation-delay:5.9s; animation-delay:5.9s; }
-.delay_6s{ -webkit-animation-delay:6s; animation-delay:6s; }
-.delay_6100ms{ -webkit-animation-delay:6.1s; animation-delay:6.1s; }
-.delay_6200ms{ -webkit-animation-delay:6.2s; animation-delay:6.2s; }
-.delay_6300ms{ -webkit-animation-delay:6.3s; animation-delay:6.3s; }
-.delay_6400ms{ -webkit-animation-delay:6.4s; animation-delay:6.4s; }
-.delay_6500ms{ -webkit-animation-delay:6.5s; animation-delay:6.5s; }
-.delay_6600ms{ -webkit-animation-delay:6.6s; animation-delay:6.6s; }
-.delay_6700ms{ -webkit-animation-delay:6.7s; animation-delay:6.7s; }
-.delay_6800ms{ -webkit-animation-delay:6.8s; animation-delay:6.8s; }
-.delay_6900ms{ -webkit-animation-delay:6.9s; animation-delay:6.9s; }
-.delay_7000ms{ -webkit-animation-delay:7s;   animation-delay:7s; }
-.delay_7100ms{ -webkit-animation-delay:7.1s; animation-delay:7.1s; }
-.delay_7200ms{ -webkit-animation-delay:7.2s; animation-delay:7.2s; }
-.delay_7300ms{ -webkit-animation-delay:7.3s; animation-delay:7.3s; }
-.delay_7400ms{ -webkit-animation-delay:7.4s; animation-delay:7.4s; }
-.delay_7500ms{ -webkit-animation-delay:7.5s; animation-delay:7.5s; }
-.delay_7600ms{ -webkit-animation-delay:7.6s; animation-delay:7.6s; }
-.delay_7700ms{ -webkit-animation-delay:7.7s; animation-delay:7.7s; }
-.delay_7800ms{ -webkit-animation-delay:7.8s; animation-delay:7.8s; }
-.delay_7900ms{ -webkit-animation-delay:7.9s; animation-delay:7.9s; }
-
-html{
-  height:100%;
+html, body {
+  height: 100%
 }
 
-body{
-  height:100%;
-  width:100%;
-  background: #0f2453;
+body {
+  font: normal 16px/200% tohoma, helvetica, "Microsoft yahei";
+  color: #000
 }
 
-/*frist page*/
+body, p, ul, li, ol, h1, h2, h3, h4, h5, h6, dl, dt, dd, form, iframe {
+  margin: 0;
+  padding: 0
+}
 
-.content-box{
-  height:100%;
-  width:100%;
+ul, li, ol {
+  list-style: none outside none
+}
+
+img {
+  border: 0 none;
+  vertical-align: top;
+  width: 100%
+}
+
+input, select {
+  vertical-align: middle
+}
+
+pre {
+  white-space: normal
+}
+
+.edge {
+  margin: 0 auto
+}
+
+.clear {
+  zoom: 1;
+  clear: both
+}
+
+.clear:after {
+  content: ".";
+  height: 0;
+  display: block;
+  clear: both;
+  visibility: hidden;
+  font-size: 0
+}
+
+a {
+  text-decoration: none;
+  color: #333
+}
+
+a:visited {
+  color: #333
+}
+
+a:hover, a:active {
+  color: #999
+}
+
+.fix {
+  font-size: 0;
+  height: 1px
+}
+
+.fl {
+  float: left
+}
+
+.fr {
+  float: right
+}
+
+body {
+  background: #fff
+}
+
+.d-b {
+  display: block
+}
+
+.d-box {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box
+}
+
+.flex1 {
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+  box-flex: 1;
+  display: block
+}
+
+.vcenter {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center
+}
+
+.tcenter {
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center
+}
+
+.v-box {
+  -webkit-box-orient: vertical;
+  box-orient: vertical
+}
+
+.tc {
+  text-align: center
+}
+
+.delay_100ms {
+  -webkit-animation-delay: 100ms;
+  animation-delay: 100ms
+}
+
+.delay_200ms {
+  -webkit-animation-delay: 200ms;
+  animation-delay: 200ms
+}
+
+.delay_300ms {
+  -webkit-animation-delay: 300ms;
+  animation-delay: 300ms
+}
+
+.delay_400ms {
+  -webkit-animation-delay: 400ms;
+  animation-delay: 400ms
+}
+
+.delay_500ms {
+  -webkit-animation-delay: 500ms;
+  animation-delay: 500ms
+}
+
+.delay_600ms {
+  -webkit-animation-delay: 600ms;
+  animation-delay: 600ms
+}
+
+.delay_700ms {
+  -webkit-animation-delay: 700ms;
+  animation-delay: 700ms
+}
+
+.delay_800ms {
+  -webkit-animation-delay: 800ms;
+  animation-delay: 800ms
+}
+
+.delay_900ms {
+  -webkit-animation-delay: 900ms;
+  animation-delay: 900ms
+}
+
+.delay_1s {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s
+}
+
+.delay_1100ms {
+  -webkit-animation-delay: 1.1s;
+  animation-delay: 1.1s
+}
+
+.delay_1200ms {
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s
+}
+
+.delay_1300ms {
+  -webkit-animation-delay: 1.3s;
+  animation-delay: 1.3s
+}
+
+.delay_1400ms {
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s
+}
+
+.delay_1500ms {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s
+}
+
+.delay_1600ms {
+  -webkit-animation-delay: 1.6s;
+  animation-delay: 1.6s
+}
+
+.delay_1700ms {
+  -webkit-animation-delay: 1.7s;
+  animation-delay: 1.7s
+}
+
+.delay_1800ms {
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s
+}
+
+.delay_1900ms {
+  -webkit-animation-delay: 1.9s;
+  animation-delay: 1.9s
+}
+
+.delay_2s {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s
+}
+
+.delay_2100ms {
+  -webkit-animation-delay: 2.1s;
+  animation-delay: 2.1s
+}
+
+.delay_2200ms {
+  -webkit-animation-delay: 2.2s;
+  animation-delay: 2.2s
+}
+
+.delay_2300ms {
+  -webkit-animation-delay: 2.3s;
+  animation-delay: 2.3s
+}
+
+.delay_2400ms {
+  -webkit-animation-delay: 2.4s;
+  animation-delay: 2.4s
+}
+
+.delay_2500ms {
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s
+}
+
+.delay_2600ms {
+  -webkit-animation-delay: 2.6s;
+  animation-delay: 2.6s
+}
+
+.delay_2700ms {
+  -webkit-animation-delay: 2.7s;
+  animation-delay: 2.7s
+}
+
+.delay_2800ms {
+  -webkit-animation-delay: 2.8s;
+  animation-delay: 2.8s
+}
+
+.delay_2900ms {
+  -webkit-animation-delay: 2.9s;
+  animation-delay: 2.9s
+}
+
+.delay_3s {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s
+}
+
+.delay_3100ms {
+  -webkit-animation-delay: 3.1s;
+  animation-delay: 3.1s
+}
+
+.delay_3200ms {
+  -webkit-animation-delay: 3.2s;
+  animation-delay: 3.2s
+}
+
+.delay_3300ms {
+  -webkit-animation-delay: 3.3s;
+  animation-delay: 3.3s
+}
+
+.delay_3400ms {
+  -webkit-animation-delay: 3.4s;
+  animation-delay: 3.4s
+}
+
+.delay_3500ms {
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s
+}
+
+.delay_3600ms {
+  -webkit-animation-delay: 3.6s;
+  animation-delay: 3.6s
+}
+
+.delay_3700ms {
+  -webkit-animation-delay: 3.7s;
+  animation-delay: 3.7s
+}
+
+.delay_3800ms {
+  -webkit-animation-delay: 3.8s;
+  animation-delay: 3.8s
+}
+
+.delay_3900ms {
+  -webkit-animation-delay: 3.9s;
+  animation-delay: 3.9s
+}
+
+.delay_4s {
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s
+}
+
+.delay_4100ms {
+  -webkit-animation-delay: 4.1s;
+  animation-delay: 4.1s
+}
+
+.delay_4200ms {
+  -webkit-animation-delay: 4.2s;
+  animation-delay: 4.2s
+}
+
+.delay_4300ms {
+  -webkit-animation-delay: 4.3s;
+  animation-delay: 4.3s
+}
+
+.delay_4400ms {
+  -webkit-animation-delay: 4.4s;
+  animation-delay: 4.4s
+}
+
+.delay_4500ms {
+  -webkit-animation-delay: 4.5s;
+  animation-delay: 4.5s
+}
+
+.delay_4600ms {
+  -webkit-animation-delay: 4.6s;
+  animation-delay: 4.6s
+}
+
+.delay_4700ms {
+  -webkit-animation-delay: 4.7s;
+  animation-delay: 4.7s
+}
+
+.delay_4800ms {
+  -webkit-animation-delay: 4.8s;
+  animation-delay: 4.8s
+}
+
+.delay_4900ms {
+  -webkit-animation-delay: 4.9s;
+  animation-delay: 4.9s
+}
+
+.delay_5s {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s
+}
+
+.delay_5100ms {
+  -webkit-animation-delay: 5.1s;
+  animation-delay: 5.1s
+}
+
+.delay_5200ms {
+  -webkit-animation-delay: 5.2s;
+  animation-delay: 5.2s
+}
+
+.delay_5300ms {
+  -webkit-animation-delay: 5.3s;
+  animation-delay: 5.3s
+}
+
+.delay_5400ms {
+  -webkit-animation-delay: 5.4s;
+  animation-delay: 5.4s
+}
+
+.delay_5500ms {
+  -webkit-animation-delay: 5.5s;
+  animation-delay: 5.5s
+}
+
+.delay_5600ms {
+  -webkit-animation-delay: 5.6s;
+  animation-delay: 5.6s
+}
+
+.delay_5700ms {
+  -webkit-animation-delay: 5.7s;
+  animation-delay: 5.7s
+}
+
+.delay_5800ms {
+  -webkit-animation-delay: 5.8s;
+  animation-delay: 5.8s
+}
+
+.delay_5900ms {
+  -webkit-animation-delay: 5.9s;
+  animation-delay: 5.9s
+}
+
+.delay_6s {
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s
+}
+
+.delay_6100ms {
+  -webkit-animation-delay: 6.1s;
+  animation-delay: 6.1s
+}
+
+.delay_6200ms {
+  -webkit-animation-delay: 6.2s;
+  animation-delay: 6.2s
+}
+
+.delay_6300ms {
+  -webkit-animation-delay: 6.3s;
+  animation-delay: 6.3s
+}
+
+.delay_6400ms {
+  -webkit-animation-delay: 6.4s;
+  animation-delay: 6.4s
+}
+
+.delay_6500ms {
+  -webkit-animation-delay: 6.5s;
+  animation-delay: 6.5s
+}
+
+.delay_6600ms {
+  -webkit-animation-delay: 6.6s;
+  animation-delay: 6.6s
+}
+
+.delay_6700ms {
+  -webkit-animation-delay: 6.7s;
+  animation-delay: 6.7s
+}
+
+.delay_6800ms {
+  -webkit-animation-delay: 6.8s;
+  animation-delay: 6.8s
+}
+
+.delay_6900ms {
+  -webkit-animation-delay: 6.9s;
+  animation-delay: 6.9s
+}
+
+.delay_7000ms {
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s
+}
+
+.delay_7100ms {
+  -webkit-animation-delay: 7.1s;
+  animation-delay: 7.1s
+}
+
+.delay_7200ms {
+  -webkit-animation-delay: 7.2s;
+  animation-delay: 7.2s
+}
+
+.delay_7300ms {
+  -webkit-animation-delay: 7.3s;
+  animation-delay: 7.3s
+}
+
+.delay_7400ms {
+  -webkit-animation-delay: 7.4s;
+  animation-delay: 7.4s
+}
+
+.delay_7500ms {
+  -webkit-animation-delay: 7.5s;
+  animation-delay: 7.5s
+}
+
+.delay_7600ms {
+  -webkit-animation-delay: 7.6s;
+  animation-delay: 7.6s
+}
+
+.delay_7700ms {
+  -webkit-animation-delay: 7.7s;
+  animation-delay: 7.7s
+}
+
+.delay_7800ms {
+  -webkit-animation-delay: 7.8s;
+  animation-delay: 7.8s
+}
+
+.delay_7900ms {
+  -webkit-animation-delay: 7.9s;
+  animation-delay: 7.9s
+}
+
+html {
+  height: 100%
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background: #0f2453
+}
+
+.content-box {
+  height: 100%;
+  width: 100%;
   overflow: hidden;
-  position: relative;
+  position: relative
 }
 
-.end-page{
+.end-page {
   position: absolute;
-  top:0;
-  left:0;
-  height:100%;
-  width:100%;
-  overflow: hidden;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden
 }
 
-.end-page.active{
-  animation:endPage 2s;
-  animation-fill-mode:forwards;
+.end-page.active {
+  animation: endPage 2s;
+  animation-fill-mode: forwards
 }
 
-.poetry-box{
+.poetry-box {
   width: 320px;
   height: 436px;
   margin: 0 auto;
   position: relative;
-  top:396px;
-  z-index: 500;
+  top: 396px;
+  z-index: 500
 }
 
-.poetry{
+.poetry {
   background-image: url("../images/poetry.png");
   background-size: 100% 100%;
   width: 320px;
-  height: 325px;
+  height: 325px
 }
 
-.fristButton{
+.fristButton {
   background-image: url("../images/fristButton.png");
   background-size: 100% 100%;
   width: 380px;
   height: 89px;
   position: relative;
   margin-top: 100px;
-  margin-left: -36px;
+  margin-left: -36px
 }
 
-/*choose page*/
-
-.choose-Page{
-  height:100%;
-  width:100%;
+.choose-Page {
+  height: 100%;
+  width: 100%;
   display: none;
   position: absolute;
   background-image: url("../images/winBackground.png");
-  top:0;
-  left:0;
-  overflow: hidden;
+  top: 0;
+  left: 0;
+  overflow: hidden
 }
 
-.choose-Page.OnActive .chooseOk{
-  display: none;
+.choose-Page.OnActive .chooseOk {
+  display: none
 }
 
 .chooseTree {
@@ -186,7 +593,7 @@ body{
   left: 629px;
   top: 238px;
   width: 177px;
-  height: 66px;
+  height: 66px
 }
 
 .chooseCloud1 {
@@ -196,8 +603,9 @@ body{
   top: 256px;
   width: 102px;
   height: 42px;
-  animation: endSCloud 10s infinite;
+  animation: endSCloud 10s infinite
 }
+
 .chooseCloud2 {
   background-image: url("../images/endSCloud.png");
   position: absolute;
@@ -205,40 +613,45 @@ body{
   top: 429px;
   width: 102px;
   height: 42px;
-  animation: endSCloudT 10s infinite;
+  animation: endSCloudT 10s infinite
 }
+
 .chooseLantern1 {
   background-image: url("../images/chooseLantern1.png");
   position: absolute;
   left: 218px;
   top: 74px;
   width: 13px;
-  height: 19px;
+  height: 19px
 }
+
 .chooseLantern2 {
   background-image: url("../images/chooseLantern2.png");
   position: absolute;
   left: 401px;
   top: 29px;
   width: 13px;
-  height: 19px;
+  height: 19px
 }
+
 .chooseLantern3 {
   background-image: url("../images/chooseLantern3.png");
   position: absolute;
   left: 319px;
   top: 105px;
   width: 27px;
-  height: 38px;
+  height: 38px
 }
+
 .chooseLantern4 {
   background-image: url("../images/chooseLantern4.png");
   position: absolute;
   left: 35px;
   top: 268px;
   width: 39px;
-  height: 56px;
+  height: 56px
 }
+
 .fruits1 {
   background-image: url("../images/fruits1.png");
   position: absolute;
@@ -246,8 +659,9 @@ body{
   top: 655px;
   width: 29px;
   height: 29px;
-  display: none;
+  display: none
 }
+
 .fruits2 {
   background-image: url("../images/fruits2.png");
   position: absolute;
@@ -255,8 +669,9 @@ body{
   top: 672px;
   width: 25px;
   height: 25px;
-  display: none;
+  display: none
 }
+
 .fruits3 {
   background-image: url("../images/fruits3.png");
   position: absolute;
@@ -264,8 +679,9 @@ body{
   top: 623px;
   width: 29px;
   height: 31px;
-  display: none;
+  display: none
 }
+
 .fruits4 {
   background-image: url("../images/fruits4.png");
   position: absolute;
@@ -273,8 +689,9 @@ body{
   top: 595px;
   width: 27px;
   height: 27px;
-  display: none;
+  display: none
 }
+
 .fruits5 {
   background-image: url("../images/fruits5.png");
   position: absolute;
@@ -282,8 +699,9 @@ body{
   top: 681px;
   width: 28px;
   height: 28px;
-  display: none;
+  display: none
 }
+
 .fruits6 {
   background-image: url("../images/fruits6.png");
   position: absolute;
@@ -291,57 +709,56 @@ body{
   top: 673px;
   width: 28px;
   height: 28px;
-  display: none;
+  display: none
 }
 
-.fruits1.active{
-  animation:fruits1s 3s infinite;
-  animation-fill-mode:forwards;
+.fruits1.active {
+  animation: fruits1s 3s infinite;
+  animation-fill-mode: forwards
 }
 
-.fruits2.active{
-  animation:fruits1s 3s infinite;
-  animation-fill-mode:forwards;
+.fruits2.active {
+  animation: fruits1s 3s infinite;
+  animation-fill-mode: forwards
 }
 
-.fruits3.active{
-  animation:fruits1s 3s infinite;
-  animation-fill-mode:forwards;
+.fruits3.active {
+  animation: fruits1s 3s infinite;
+  animation-fill-mode: forwards
 }
 
-.fruits4.active{
-  animation:fruits1s 3s infinite;
-  animation-fill-mode:forwards;
+.fruits4.active {
+  animation: fruits1s 3s infinite;
+  animation-fill-mode: forwards
 }
 
-.fruits5.active{
-  animation:fruits1s 3s infinite;
-  animation-fill-mode:forwards;
+.fruits5.active {
+  animation: fruits1s 3s infinite;
+  animation-fill-mode: forwards
 }
 
-.fruits6.active{
-  animation:fruits1s 3s infinite;
-  animation-fill-mode:forwards;
+.fruits6.active {
+  animation: fruits1s 3s infinite;
+  animation-fill-mode: forwards
 }
 
 @-webkit-keyframes fruits1s {
-    0% {
-        transform: scale(0.8,0.8);
-    }
-    25% {
-        transform: scale(1.3,1.3);
-    }
-    50% {
-        transform: scale(0.8,0.8);
-    }
-    75% {
-        transform: scale(1.3,1.3);
-    }
-    100% {
-        transform: scale(0.8,0.8);
-    }
+  0% {
+    transform: scale(0.8, 0.8)
+  }
+  25% {
+    transform: scale(1.3, 1.3)
+  }
+  50% {
+    transform: scale(0.8, 0.8)
+  }
+  75% {
+    transform: scale(1.3, 1.3)
+  }
+  100% {
+    transform: scale(0.8, 0.8)
+  }
 }
-
 
 .chooseOk {
   background-image: url("../images/chooseOk.png");
@@ -349,20 +766,20 @@ body{
   left: 171px;
   top: 1040px;
   width: 380px;
-  height: 89px;
+  height: 89px
 }
 
 .chooseOther {
-  background-image: url("../images/chooseOther.png") ;
+  background-image: url("../images/chooseOther.png");
   background-repeat: repeat-y;
   position: absolute;
   left: 524px;
   top: 783px;
   width: 157px;
-  height: 202px;
+  height: 202px
 }
 
-.chooseOther.active:after{
+.chooseOther.active:after {
   content: '';
   background-image: url(../images/chooseTrue.png);
   background-size: 100% 100%;
@@ -373,19 +790,19 @@ body{
   text-align: center;
   top: 179px;
   left: 9px;
-  position: absolute;
+  position: absolute
 }
 
-.chooseZao{
+.chooseZao {
   background-image: url("../images/chooseZao.png");
   position: absolute;
   left: 306px;
   top: 337px;
   width: 147px;
-  height: 194px;
+  height: 194px
 }
 
-.chooseZao.active:after{
+.chooseZao.active:after {
   content: '';
   background-image: url(../images/chooseTrue.png);
   background-size: 100% 100%;
@@ -396,7 +813,7 @@ body{
   text-align: center;
   top: 172px;
   left: 6px;
-  position: absolute;
+  position: absolute
 }
 
 .lotus {
@@ -405,7 +822,7 @@ body{
   left: 394px;
   top: 901px;
   width: 24px;
-  height: 33px;
+  height: 33px
 }
 
 .chooseLotus {
@@ -414,10 +831,10 @@ body{
   left: 307px;
   top: 796px;
   width: 145px;
-  height: 194px;
+  height: 194px
 }
 
-.chooseLotus.active:after{
+.chooseLotus.active:after {
   content: '';
   background-image: url(../images/chooseTrue.png);
   background-size: 100% 100%;
@@ -428,7 +845,7 @@ body{
   text-align: center;
   top: 172px;
   left: 6px;
-  position: absolute;
+  position: absolute
 }
 
 .iceCream {
@@ -438,35 +855,35 @@ body{
   top: 859px;
   width: 51px;
   height: 70px;
-  display: none;
+  display: none
 }
 
-.iceCream.active{
-  animation:iceCreams 3s infinite;
-  animation-fill-mode:forwards;
+.iceCream.active {
+  animation: iceCreams 3s infinite;
+  animation-fill-mode: forwards
 }
 
-.lotus.active{
-  animation:iceCreams 3s infinite;
-  animation-fill-mode:forwards;
+.lotus.active {
+  animation: iceCreams 3s infinite;
+  animation-fill-mode: forwards
 }
 
 @-webkit-keyframes iceCreams {
-    0% {
-        transform: scale(0.8,0.8);
-    }
-    25% {
-        transform: scale(1.2,1.2);
-    }
-    50% {
-        transform: scale(0.8,0.8);
-    }
-    75% {
-        transform: scale(1.2,1.2);
-    }
-    100% {
-        transform: scale(0.8,0.8);
-    }
+  0% {
+    transform: scale(0.8, 0.8)
+  }
+  25% {
+    transform: scale(1.2, 1.2)
+  }
+  50% {
+    transform: scale(0.8, 0.8)
+  }
+  75% {
+    transform: scale(1.2, 1.2)
+  }
+  100% {
+    transform: scale(0.8, 0.8)
+  }
 }
 
 .chooseIce {
@@ -475,10 +892,10 @@ body{
   left: 69px;
   top: 786px;
   width: 155px;
-  height: 194px;
+  height: 194px
 }
 
-.chooseIce.active:after{
+.chooseIce.active:after {
   content: '';
   background-image: url(../images/chooseTrue.png);
   background-size: 100% 100%;
@@ -489,7 +906,7 @@ body{
   text-align: center;
   top: 172px;
   left: 6px;
-  position: absolute;
+  position: absolute
 }
 
 .chooseFruits {
@@ -498,10 +915,10 @@ body{
   left: 541px;
   top: 560px;
   width: 145px;
-  height: 194px;
+  height: 194px
 }
 
-.chooseFruits.active:after{
+.chooseFruits.active:after {
   content: '';
   background-image: url(../images/chooseTrue.png);
   background-size: 100% 100%;
@@ -512,7 +929,7 @@ body{
   text-align: center;
   top: 172px;
   left: 9px;
-  position: absolute;
+  position: absolute
 }
 
 .chooseXian {
@@ -521,10 +938,10 @@ body{
   left: 307px;
   top: 556px;
   width: 148px;
-  height: 194px;
+  height: 194px
 }
 
-.chooseXian.active:after{
+.chooseXian.active:after {
   content: '';
   background-image: url(../images/chooseTrue.png);
   background-size: 100% 100%;
@@ -535,7 +952,7 @@ body{
   text-align: center;
   top: 172px;
   left: 6px;
-  position: absolute;
+  position: absolute
 }
 
 .chooseEggB {
@@ -544,10 +961,10 @@ body{
   left: 68px;
   top: 556px;
   width: 155px;
-  height: 194px;
+  height: 194px
 }
 
-.chooseEggB.active:after{
+.chooseEggB.active:after {
   content: '';
   background-image: url(../images/chooseTrue.png);
   background-size: 100% 100%;
@@ -558,7 +975,7 @@ body{
   text-align: center;
   top: 172px;
   left: 6px;
-  position: absolute;
+  position: absolute
 }
 
 .chooseEgg {
@@ -568,30 +985,30 @@ body{
   top: 672px;
   width: 78px;
   height: 29px;
-  display: none;
+  display: none
 }
 
-.chooseEgg.active{
-  animation:chooseEggs 3s infinite;
-  animation-fill-mode:forwards;
+.chooseEgg.active {
+  animation: chooseEggs 3s infinite;
+  animation-fill-mode: forwards
 }
 
 @-webkit-keyframes chooseEggs {
-    0% {
-        transform: translate3d(0, 0, 0);
-    }
-    25% {
-        transform: translate3d(-16px, 0, 0);
-    }
-    50% {
-        transform: translate3d(0, 0, 0);
-    }
-    75% {
-        transform: translate3d(-16px, 0, 0);
-    }
-    100% {
-        transform: translate3d(0, 0, 0);
-    }
+  0% {
+    transform: translate3d(0, 0, 0)
+  }
+  25% {
+    transform: translate3d(-16px, 0, 0)
+  }
+  50% {
+    transform: translate3d(0, 0, 0)
+  }
+  75% {
+    transform: translate3d(-16px, 0, 0)
+  }
+  100% {
+    transform: translate3d(0, 0, 0)
+  }
 }
 
 .chooseKernel {
@@ -601,10 +1018,10 @@ body{
   top: 330px;
   width: 155px;
   height: 201px;
-  z-index: 5;
+  z-index: 5
 }
 
-.chooseKernel.active:after{
+.chooseKernel.active:after {
   content: '';
   background-image: url(../images/chooseTrue.png);
   background-size: 100% 100%;
@@ -615,7 +1032,7 @@ body{
   text-align: center;
   top: 179px;
   left: 6px;
-  position: absolute;
+  position: absolute
 }
 
 .dou4 {
@@ -625,8 +1042,9 @@ body{
   top: 384px;
   width: 57px;
   height: 58px;
-  display: none;
+  display: none
 }
+
 .dou3 {
   background-image: url("../images/dou3.png");
   position: absolute;
@@ -634,8 +1052,9 @@ body{
   top: 365px;
   width: 28px;
   height: 40px;
-  display: none;
+  display: none
 }
+
 .dou1 {
   background-image: url("../images/dou1.png");
   position: absolute;
@@ -643,85 +1062,85 @@ body{
   top: 365px;
   width: 31px;
   height: 33px;
-  display: none;
+  display: none
 }
 
-.dou3.active{
-  animation:douFruits 3s infinite;
-  animation-fill-mode:forwards;
+.dou3.active {
+  animation: douFruits 3s infinite;
+  animation-fill-mode: forwards
 }
 
-.dou1.active{
-  animation:douFruits3 3s infinite;
-  animation-fill-mode:forwards;
+.dou1.active {
+  animation: douFruits3 3s infinite;
+  animation-fill-mode: forwards
 }
 
-.dou4.active{
-  animation:douFruits2 3s infinite;
-  animation-fill-mode:forwards;
+.dou4.active {
+  animation: douFruits2 3s infinite;
+  animation-fill-mode: forwards
 }
 
 @-webkit-keyframes douFruits {
-    0% {
-        transform: translate3d(0, 0, 0);
-    }
-    25% {
-        transform: translate3d(-16px, 0, 0);
-        z-index: 10;
-    }
-    50% {
-        transform: translate3d(0, 0, 0);
-    }
-    75% {
-        transform: translate3d(-16px, 0, 0);
-        z-index: 10;
-    }
-    100% {
-        transform: translate3d(0, 0, 0);
-        z-index: 0;
-    }
+  0% {
+    transform: translate3d(0, 0, 0)
+  }
+  25% {
+    transform: translate3d(-16px, 0, 0);
+    z-index: 10
+  }
+  50% {
+    transform: translate3d(0, 0, 0)
+  }
+  75% {
+    transform: translate3d(-16px, 0, 0);
+    z-index: 10
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    z-index: 0
+  }
 }
 
 @-webkit-keyframes douFruits2 {
-    0% {
-        transform: translate3d(0, 0, 0);
-    }
-    25% {
-        transform: translate3d(16px, 16px, 0);
-        z-index: 10;
-    }
-    50% {
-        transform: translate3d(0, 0, 0);
-    }
-    75% {
-        transform: translate3d(16px, 16px, 0);
-        z-index: 10;
-    }
-    100% {
-        transform: translate3d(0, 0, 0);
-        z-index: 0;
-    }
+  0% {
+    transform: translate3d(0, 0, 0)
+  }
+  25% {
+    transform: translate3d(16px, 16px, 0);
+    z-index: 10
+  }
+  50% {
+    transform: translate3d(0, 0, 0)
+  }
+  75% {
+    transform: translate3d(16px, 16px, 0);
+    z-index: 10
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    z-index: 0
+  }
 }
 
 @-webkit-keyframes douFruits3 {
-    0% {
-        transform: translate3d(0, 0, 0);
-    }
-    25% {
-        transform: translate3d(13px, -13px, 0);
-        z-index: 10;
-    }
-    50% {
-        transform: translate3d(0, 0, 0);
-    }
-    75% {
-        transform: translate3d(13px, -13px, 0);
-        z-index: 10;
-    }
-    100% {
-        transform: translate3d(0, 0, 0);
-        z-index: 0;
-    }
+  0% {
+    transform: translate3d(0, 0, 0)
+  }
+  25% {
+    transform: translate3d(13px, -13px, 0);
+    z-index: 10
+  }
+  50% {
+    transform: translate3d(0, 0, 0)
+  }
+  75% {
+    transform: translate3d(13px, -13px, 0);
+    z-index: 10
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    z-index: 0
+  }
 }
 
 .choosesweetened {
@@ -730,10 +1149,10 @@ body{
   left: 539px;
   top: 337px;
   width: 149px;
-  height: 194px;
+  height: 194px
 }
 
-.choosesweetened.active:after{
+.choosesweetened.active:after {
   content: '';
   background-image: url(../images/chooseTrue.png);
   background-size: 100% 100%;
@@ -744,7 +1163,7 @@ body{
   text-align: center;
   top: 174px;
   left: 14px;
-  position: absolute;
+  position: absolute
 }
 
 .chooseGlowworm {
@@ -754,8 +1173,9 @@ body{
   top: -420px;
   width: 1133px;
   height: 939px;
-  animation: arrow 1.5s infinite ease-in-out;
+  animation: arrow 1.5s infinite ease-in-out
 }
+
 .chooseMoon {
   background-image: url("../images/chooseMoon.png");
   position: absolute;
@@ -763,8 +1183,9 @@ body{
   left: 481px;
   top: -62px;
   width: 300px;
-  height: 300px;
+  height: 300px
 }
+
 .chooseWintersweet {
   background-image: url("../images/chooseWintersweet.png");
   background-size: 100% 100%;
@@ -772,17 +1193,19 @@ body{
   left: 0;
   top: 0;
   width: 236px;
-  height: 186px;
+  height: 186px
 }
+
 .chooseWhat {
   background-image: url("../images/chooseBing.png");
   background-size: 100% 100%;
   position: absolute;
   left: 58px;
   top: 272px;
-  height:23px;
-  width:633px;
+  height: 23px;
+  width: 633px
 }
+
 .chooseBing {
   background-image: url("../images/chooseWhat.png");
   background-size: 100% 100%;
@@ -790,21 +1213,19 @@ body{
   left: 103px;
   top: 200px;
   width: 516px;
-  height: 46px;
+  height: 46px
 }
 
-/*excl page*/
-
-.excl-page{
-  height:100%;
-  width:100%;
+.excl-page {
+  height: 100%;
+  width: 100%;
   display: none;
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   overflow: hidden;
-  background: rgba(0,0,0,.7);
-  z-index: 50;
+  background: rgba(0, 0, 0, .7);
+  z-index: 50
 }
 
 .excl {
@@ -814,7 +1235,7 @@ body{
   top: 319px;
   width: 689px;
   height: 601px;
-  z-index: 173;
+  z-index: 173
 }
 
 .exclButton {
@@ -824,77 +1245,72 @@ body{
   top: 1040px;
   width: 380px;
   height: 89px;
-  z-index: 172;
+  z-index: 172
 }
 
 ul {
-  list-style: none;
+  list-style: none
 }
 
 .rect {
   position: absolute;
   bottom: 50px;
   left: 47px;
-  width: 100%;
+  width: 100%
 }
 
 .rect-item {
   position: absolute;
   bottom: 0;
   width: 45px;
-  background-color: red;
+  background-color: red
 }
 
-.rect-item:nth-child(1){
-  background-color: rgb(237, 17, 100);
+.rect-item:nth-child(1) {
+  background-color: #ed1164
 }
 
-.rect-item:nth-child(2){
-  background-color: rgb(171, 74, 156);
+.rect-item:nth-child(2) {
+  background-color: #ab4a9c
 }
 
-.rect-item:nth-child(3){
-  background-color: rgb(0, 154, 194);
+.rect-item:nth-child(3) {
+  background-color: #009ac2
 }
 
-.rect-item:nth-child(4){
-  background-color: rgb(95, 196, 226);
+.rect-item:nth-child(4) {
+  background-color: #5fc4e2
 }
 
-.rect-item:nth-child(5){
-  background-color: rgb(98, 188, 110);
+.rect-item:nth-child(5) {
+  background-color: #62bc6e
 }
 
-.rect-item:nth-child(6){
-  background-color: rgb(159, 188, 46);
+.rect-item:nth-child(6) {
+  background-color: #9fbc2e
 }
 
-.rect-item:nth-child(7){
-  background-color: rgb(159, 188, 46);
+.rect-item:nth-child(7) {
+  background-color: #9fbc2e
 }
 
-.rect-item:nth-child(8){
-  background-color: rgb(253, 172, 19);
+.rect-item:nth-child(8) {
+  background-color: #fdac13
 }
 
-.rect-item:nth-child(9){
-  background-color: rgb(246, 139, 31);
+.rect-item:nth-child(9) {
+  background-color: #f68b1f
 }
 
-/**/
-
-
-/*lotteryPage*/
-
-.lottery-page{
-  height:100%;
-  width:100%;
+.lottery-page {
+  height: 100%;
+  width: 100%;
   display: none;
   overflow: hidden;
   position: absolute;
-  top:0;
-  left:0;
-  background-image: url("../images/winBackground.png");
+  top: 0;
+  left: 0;
+  background-image: url("../images/winBackground.png")
 }
 
 .lotteryMoon {
@@ -904,8 +1320,9 @@ ul {
   left: 481px;
   top: -62px;
   width: 300px;
-  height: 300px;
+  height: 300px
 }
+
 .lotteryWintersweet {
   background-image: url("../images/chooseWintersweet.png");
   background-size: 100% 100%;
@@ -913,16 +1330,18 @@ ul {
   left: 0;
   top: 0;
   width: 236px;
-  height: 186px;
+  height: 186px
 }
+
 .lotteryTree {
   background-image: url("../images/lotteryTree.png");
   position: absolute;
   left: 629px;
   top: 239px;
   width: 176px;
-  height: 64px;
+  height: 64px
 }
+
 .lotteryYun2 {
   background-image: url("../images/lotteryYun2.png");
   position: absolute;
@@ -930,8 +1349,9 @@ ul {
   top: 235px;
   width: 102px;
   height: 42px;
-  animation: endSCloud 10s infinite;
+  animation: endSCloud 10s infinite
 }
+
 .lotteryYun1 {
   background-image: url("../images/lotteryYun1.png");
   position: absolute;
@@ -939,48 +1359,54 @@ ul {
   top: 487px;
   width: 102px;
   height: 42px;
-  animation: endSCloudT 10s infinite;
+  animation: endSCloudT 10s infinite
 }
+
 .lotteryDeng2 {
   background-image: url("../images/lotteryDeng2.png");
   position: absolute;
   left: 218px;
   top: 74px;
   width: 13px;
-  height: 19px;
+  height: 19px
 }
+
 .lotteryDeng4 {
   background-image: url("../images/lotteryDeng4.png");
   position: absolute;
   left: 401px;
   top: 29px;
   width: 13px;
-  height: 19px;
+  height: 19px
 }
+
 .lotteryDeng3 {
   background-image: url("../images/lotteryDeng3.png");
   position: absolute;
   left: 319px;
   top: 105px;
   width: 27px;
-  height: 38px;
+  height: 38px
 }
+
 .lotteryDeng5 {
   background-image: url("../images/lotteryDeng5.png");
   position: absolute;
   left: 492px;
   top: 177px;
   width: 39px;
-  height: 56px;
+  height: 56px
 }
+
 .lotteryDeng1 {
   background-image: url("../images/lotteryDeng1.png");
   position: absolute;
   left: 26px;
   top: 206px;
   width: 39px;
-  height: 56px;
+  height: 56px
 }
+
 .lotteryGlowworm2 {
   background-image: url("../images/lotteryGlowworm2.png");
   position: absolute;
@@ -988,8 +1414,9 @@ ul {
   top: -410px;
   width: 1133px;
   height: 939px;
-  animation: arrow 1.5s infinite ease-in-out;
+  animation: arrow 1.5s infinite ease-in-out
 }
+
 .lotteryGlowworm1 {
   background-image: url("../images/lotteryGlowworm1.png");
   position: absolute;
@@ -997,405 +1424,379 @@ ul {
   top: 435px;
   width: 1133px;
   height: 986px;
-  animation: arrow2 1.5s infinite ease-in-out;
+  animation: arrow2 1.5s infinite ease-in-out
 }
 
-.lotteryBing9-map{
+.lotteryBing9-map {
   position: absolute;
   left: 537px;
-  top: 889px;
+  top: 889px
 }
 
 .lotteryBing9 {
-  background-image: url("../images/lotteryBing9.png");
+  background-image: url("../images/lotteryBing9.png")
 }
 
 .lotteryBing99 {
-  background-image: url("../images/lotteryBing99.png");
+  background-image: url("../images/lotteryBing99.png")
 }
 
-.lotteryBing8-map{
+.lotteryBing8-map {
   position: absolute;
   left: 307px;
-  top: 889px;
+  top: 889px
 }
 
 .lotteryBing8 {
-  background-image: url("../images/lotteryBing8.png");
+  background-image: url("../images/lotteryBing8.png")
 }
 
 .lotteryBing88 {
-  background-image: url("../images/lotteryBing88.png");
+  background-image: url("../images/lotteryBing88.png")
 }
 
-.lotteryBing7-map{
+.lotteryBing7-map {
   position: absolute;
   left: 79px;
-  top: 889px;
+  top: 889px
 }
 
 .lotteryBing7 {
-  background-image: url("../images/lotteryBing7.png");
+  background-image: url("../images/lotteryBing7.png")
 }
 
 .lotteryBing77 {
-  background-image: url("../images/lotteryBing77.png");
+  background-image: url("../images/lotteryBing77.png")
 }
 
-.lotteryBing6-map{
+.lotteryBing6-map {
   position: absolute;
   left: 537px;
-  top: 689px;
+  top: 689px
 }
 
 .lotteryBing6 {
-  background-image: url("../images/lotteryBing6.png");
+  background-image: url("../images/lotteryBing6.png")
 }
 
 .lotteryBing66 {
-  background-image: url("../images/lotteryBing66.png");
+  background-image: url("../images/lotteryBing66.png")
 }
 
-.lotteryBing5-map{
+.lotteryBing5-map {
   position: absolute;
   left: 307px;
-  top: 689px;
+  top: 689px
 }
 
 .lotteryBing5 {
-  background-image: url("../images/lotteryBing5.png");
+  background-image: url("../images/lotteryBing5.png")
 }
 
 .lotteryBing55 {
-  background-image: url("../images/lotteryBing55.png");
+  background-image: url("../images/lotteryBing55.png")
 }
 
-.lotteryBing4-map{
+.lotteryBing4-map {
   position: absolute;
   left: 79px;
-  top: 689px;
+  top: 689px
 }
 
 .lotteryBing4 {
-  background-image: url("../images/lotteryBing4.png");
+  background-image: url("../images/lotteryBing4.png")
 }
 
 .lotteryBing44 {
-  background-image: url("../images/lotteryBing44.png");
+  background-image: url("../images/lotteryBing44.png")
 }
 
-.lotteryBing3-map{
+.lotteryBing3-map {
   position: absolute;
   left: 537px;
-  top: 490px;
+  top: 490px
 }
 
 .lotteryBing3 {
-  background-image: url("../images/lotteryBing3.png");
+  background-image: url("../images/lotteryBing3.png")
 }
 
 .lotteryBing33 {
-  background-image: url("../images/lotteryBing33.png");
+  background-image: url("../images/lotteryBing33.png")
 }
 
-.lotteryBing2-map{
+.lotteryBing2-map {
   position: absolute;
   left: 307px;
-  top: 490px;
+  top: 490px
 }
 
 .lotteryBing2 {
-  background-image: url("../images/lotteryBing2.png");
+  background-image: url("../images/lotteryBing2.png")
 }
 
 .lotteryBing22 {
-  background-image: url("../images/lotteryBing22.png");
+  background-image: url("../images/lotteryBing22.png")
 }
 
-.lotteryBing1-map{
+.lotteryBing1-map {
   position: absolute;
   left: 79px;
-  top: 490px;
+  top: 490px
 }
 
 .lotteryBing1 {
-  background-image: url("../images/lotteryBing1.png");
+  background-image: url("../images/lotteryBing1.png")
 }
 
-.lotteryBing11{
-  background-image: url("../images/lotteryBing11.png");
+.lotteryBing11 {
+  background-image: url("../images/lotteryBing11.png")
 }
 
-.wrap{
+.wrap {
   width: 145px;
-  height: 143px;
+  height: 143px
 }
 
-.front,
-.back {
+.front, .back {
   backface-visibility: hidden;
   transition: 1s;
   width: 145px;
   height: 143px;
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0
 }
 
 .front {
-  z-index: 2;
+  z-index: 2
 }
 
 .back {
   transform: rotateY(180deg);
-  z-index: 1;
+  z-index: 1
 }
 
 .wrap.active .front {
   transform: rotateY(180deg);
-  z-index: 1;
+  z-index: 1
 }
 
 .wrap.active .back {
   transform: rotateY(360deg);
-  z-index: 2;
+  z-index: 2
 }
 
-
-.lotteryChoose{
+.lotteryChoose {
   background-image: url("../images/lotteryChoose.png");
   position: absolute;
   left: 235px;
   top: 370px;
-  width:279px;
-  height:23px;
+  width: 279px;
+  height: 23px
 }
 
-.lotteryLove{
+.lotteryLove {
   background-image: url("../images/lotteryLove.png");
   position: absolute;
   left: 79px;
   top: 208px;
   width: 595px;
-  height: 132px;
+  height: 132px
 }
 
-/*.lotteryOk {
-  background-image: url("../images/lotteryOk.png");
+.win-page {
+  height: 100%;
+  width: 100%;
   position: absolute;
-  left: 171px;
-  top: 1117px;
-  width: 380px;
-  height: 89px;
-  z-index: 119;
-}*/
-
-/**/
-
-
-/*winpage*/
-
-.win-page{
-  height:100%;
-  width:100%;
-  position: absolute;
-  top:-100%;
-  left:100%;
+  top: -100%;
+  left: 100%;
   transition: .5s;
-  background: rgba(0,0,0,.7);
-  transform: scale(.1,.1);
+  background: rgba(0, 0, 0, .7);
+  transform: scale(.1, .1)
 }
 
-.win-page.active{
+.win-page.active {
   transform: translate3d(0, 0, 0);
-  transform: scale(1,1);
-  top:0;
-  left:0;
+  transform: scale(1, 1);
+  top: 0;
+  left: 0
 }
 
-.star{
-  width:750px;
-  height:1334px;
+.star {
+  width: 750px;
+  height: 1334px;
   background-size: 100% 100%;
-  background-image:url('../images/star.png');
+  background-image: url('../images/star.png')
 }
 
-
-
-/**/
-
-
-
-
-
-/*end-page css*/
-.end-page{
-  height:100%;
-  width:100%;
-  background-image:url('../images/endBackground.png');
+.end-page {
+  height: 100%;
+  width: 100%;
+  background-image: url('../images/endBackground.png');
   background-size: 100% 100%;
   position: relative;
-  overflow: hidden;
+  overflow: hidden
 }
 
-.end-cloud1{
-  background-image:url('../images/endCloud.png');
+.end-cloud1 {
+  background-image: url('../images/endCloud.png');
   background-size: 100% 100%;
   width: 374px;
   height: 230px;
   position: absolute;
   top: -71px;
-  left: -222px;
+  left: -222px
 }
 
-.end-cloud2{
-  background-image:url('../images/endCloud.png');
+.end-cloud2 {
+  background-image: url('../images/endCloud.png');
   background-size: 100% 100%;
-  width:374px;
-  height:230px;
+  width: 374px;
+  height: 230px;
   position: absolute;
   top: -130px;
-  left: 4px;
+  left: 4px
 }
 
-.end-cloud3{
-  background-image:url('../images/endCloud.png');
+.end-cloud3 {
+  background-image: url('../images/endCloud.png');
   background-size: 100% 100%;
-  width:374px;
-  height:230px;
+  width: 374px;
+  height: 230px;
   position: absolute;
   top: -140px;
-  right: 105px;
+  right: 105px
 }
 
-.end-cloud4{
-  background-image:url('../images/endCloud.png');
+.end-cloud4 {
+  background-image: url('../images/endCloud.png');
   background-size: 100% 100%;
   width: 374px;
   height: 230px;
   position: absolute;
   top: -88px;
-  right: -164px;
+  right: -164px
 }
 
-.endWintersweet{
-  background-image:url('../images/endWintersweet.png');
+.endWintersweet {
+  background-image: url('../images/endWintersweet.png');
   background-size: 100% 100%;
   width: 225px;
   height: 186px;
   position: absolute;
   top: 79px;
-  left:0;
+  left: 0
 }
 
-.endTree{
-  background-image:url('../images/endTree.png');
+.endTree {
+  background-image: url('../images/endTree.png');
   background-size: 100% 100%;
   width: 140px;
   height: 64px;
   position: absolute;
   top: 285px;
-  right:0;
+  right: 0
 }
 
-.endLantern1{
-  background-image:url('../images/endLantern.png');
+.endLantern1 {
+  background-image: url('../images/endLantern.png');
   background-size: 100% 100%;
   width: 39px;
   height: 56px;
   position: absolute;
   top: 308px;
-  left: 27px;
+  left: 27px
 }
 
-.endLantern2{
-  background-image:url('../images/endLantern.png');
+.endLantern2 {
+  background-image: url('../images/endLantern.png');
   background-size: 100% 100%;
   width: 13px;
   height: 19px;
   position: absolute;
   top: 153px;
-  left: 139px;
+  left: 139px
 }
 
-.endLantern3{
-  background-image:url('../images/endLantern.png');
+.endLantern3 {
+  background-image: url('../images/endLantern.png');
   background-size: 100% 100%;
   width: 39px;
   height: 56px;
   position: absolute;
   top: 201px;
-  left: 45vw;
+  left: 45vw
 }
 
-.endLantern4{
-  background-image:url('../images/endLantern.png');
+.endLantern4 {
+  background-image: url('../images/endLantern.png');
   background-size: 100% 100%;
   width: 13px;
   height: 19px;
   position: absolute;
   top: 132px;
-  right: 148px;
+  right: 148px
 }
 
-.endLantern5{
-  background-image:url('../images/endLantern.png');
+.endLantern5 {
+  background-image: url('../images/endLantern.png');
   background-size: 100% 100%;
   width: 27px;
   height: 38px;
   position: absolute;
   top: 147px;
-  right: 15px;
+  right: 15px
 }
 
-.endQR{
+.endQR {
   background-size: 100% 100%;
   width: 435px;
   height: 436px;
   margin: 0 auto;
   position: relative;
-  top:396px;
-  z-index: 500;
+  top: 396px;
+  z-index: 500
 }
 
-.endGlowworm1{
-  background-image:url('../images/endGlowworm1.png');
+.endGlowworm1 {
+  background-image: url('../images/endGlowworm1.png');
   background-size: 100% 100%;
   width: 610px;
   height: 463px;
   position: absolute;
   left: 125px;
   top: 22px;
-  animation: arrow 1.5s infinite ease-in-out;
+  animation: arrow 1.5s infinite ease-in-out
 }
 
-.endGlowworm2{
-  background-image:url('../images/endGlowworm2.png');
+.endGlowworm2 {
+  background-image: url('../images/endGlowworm2.png');
   background-size: 100% 100%;
   width: 100vw;
   height: 616px;
   position: absolute;
   bottom: 22px;
   left: 0;
-  animation: arrow2 1.5s infinite ease-in-out;
+  animation: arrow2 1.5s infinite ease-in-out
 }
 
-.activityEnd{
-  background-image:url('../images/activityEnd.png') ;
+.activityEnd {
+  background-image: url('../images/activityEnd.png');
   background-size: 100% 100%;
-  width:205px;
+  width: 205px;
   height: 36px;
   margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: 10px
 }
 
-.attention{
-  background-image:url('../images/attention.png') ;
+.attention {
+  background-image: url('../images/attention.png');
   background-size: 100% 100%;
-  width:499px;
+  width: 499px;
   height: 29px;
   margin-top: 10px;
-  margin-left: -30px;
+  margin-left: -30px
 }
 
 .loading {
@@ -1403,22 +1804,22 @@ ul {
   width: 100%;
   height: 100%;
   z-index: 100000;
-  background: #1D8CE0;
+  background: #1d8ce0;
   text-align: center;
   line-height: 200px;
   font-weight: bold;
   font-size: 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center
 }
 
 .hidden {
-  display: none;
+  display: none
 }
 
-.endPoet{
-  background-image:url('../images/endPoet.png');
+.endPoet {
+  background-image: url('../images/endPoet.png');
   background-size: 100% 100%;
   width: 308px;
   height: 395px;
@@ -1426,11 +1827,11 @@ ul {
   position: absolute;
   bottom: 0;
   right: 15px;
-  z-index: 500;
+  z-index: 500
 }
 
-.endSCloud1{
-  background-image:url('../images/endSCloud.png');
+.endSCloud1 {
+  background-image: url('../images/endSCloud.png');
   background-size: 100% 100%;
   width: 102px;
   height: 42px;
@@ -1438,11 +1839,11 @@ ul {
   position: absolute;
   top: 414px;
   z-index: 500;
-  animation: endSCloud 10s infinite;
+  animation: endSCloud 10s infinite
 }
 
-.endSCloud2{
-  background-image:url('../images/endSCloud.png');
+.endSCloud2 {
+  background-image: url('../images/endSCloud.png');
   background-size: 100% 100%;
   width: 102px;
   height: 42px;
@@ -1450,178 +1851,170 @@ ul {
   position: absolute;
   top: 734px;
   z-index: 500;
-  animation: endSCloudT 10s infinite;
+  animation: endSCloudT 10s infinite
 }
 
-/*云彩*/
 @-webkit-keyframes endSCloud {
-    0% {
-        opacity: .2;
-        right:0;
-    }
-    25% {
-        opacity: .2;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-        right:120vw;
-    }
+  0% {
+    opacity: .2;
+    right: 0
+  }
+  25% {
+    opacity: .2
+  }
+  50% {
+    opacity: 0
+  }
+  100% {
+    opacity: 0;
+    right: 120vw
+  }
 }
 
-/*翻页*/
 @-webkit-keyframes endPage {
-    0% {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-    25% {
-        opacity: .5;
-    }
-    50% {
-        opacity: .3;
-    }
-    100% {
-        opacity: .1;
-        transform: translate3d(0, -100%, 0);
-    }
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0)
+  }
+  25% {
+    opacity: .5
+  }
+  50% {
+    opacity: .3
+  }
+  100% {
+    opacity: .1;
+    transform: translate3d(0, -100%, 0)
+  }
 }
-
 
 @-webkit-keyframes endSCloudT {
-    0% {
-        opacity: 0;
-    }
-    25% {
-        opacity: 0;
-        right:20vw;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        right:120vw;
-    }
+  0% {
+    opacity: 0
+  }
+  25% {
+    opacity: 0;
+    right: 20vw
+  }
+  50% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0;
+    right: 120vw
+  }
 }
 
-/*萤火虫一*/
 @-webkit-keyframes arrow {
-    0% {
-        opacity: 0.3;
-    }
-    25% {
-        opacity: .7;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
+  0% {
+    opacity: .3
+  }
+  25% {
+    opacity: .7
+  }
+  50% {
+    opacity: 0
+  }
+  100% {
+    opacity: 0
+  }
 }
-/*萤火虫二*/
+
 @-webkit-keyframes arrow2 {
-    0% {
-        opacity: 0;
-    }
-    25% {
-        opacity: 0.3;
-    }
-    50% {
-        opacity: .7;
-    }
-    100% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0
+  }
+  25% {
+    opacity: .3
+  }
+  50% {
+    opacity: .7
+  }
+  100% {
+    opacity: 0
+  }
 }
-
-/**/
-
-
 
 .sorry-page {
   background-image: url("../images/sorry.png");
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   width: 750px;
   height: 1334px;
   z-index: 3;
-  display: none;
+  display: none
 }
 
-.true-page{
+.true-page {
   background-image: url("../images/trueA.png");
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   width: 750px;
   height: 1334px;
   z-index: 3;
-  display: none;
+  display: none
 }
 
-.wait-page{
+.wait-page {
   background-image: url("../images/wait.png");
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   width: 750px;
   height: 1334px;
   z-index: 3;
-  display: none;
+  display: none
 }
 
-.address-page{
+.address-page {
   background-image: url("../images/address.png");
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   width: 750px;
   height: 1334px;
   z-index: 3;
-  display: none;
+  display: none
 }
 
-.UserName{
+.UserName {
   position: absolute;
   left: 147.3px;
   top: 505.67px;
   width: 360px;
   background: #edcd84;
   border: 0;
-  outline: none;
+  outline: 0;
   font-size: 25px;
-  color: #b74700;
+  color: #b74700
 }
 
-.UserPhone{
+.UserPhone {
   position: absolute;
   left: 147.3px;
   top: 629.129px;
   width: 360px;
   background: #edcd84;
   border: 0;
-  outline: none;
+  outline: 0;
   font-size: 25px;
-  color: #b74700;
+  color: #b74700
 }
 
-.UserAddress{
+.UserAddress {
   position: absolute;
   left: 147.3px;
   top: 745.889px;
   width: 360px;
-  height:50px;
+  height: 50px;
   background: #edcd84;
   border: 0;
-  outline: none;
+  outline: 0;
   font-size: 25px;
   color: #b74700;
-  resize: none;
+  resize: none
 }
 
 .UserMessage {
@@ -1631,5 +2024,5 @@ ul {
   top: 914px;
   width: 380px;
   height: 89px;
-  z-index: 23;
+  z-index: 23
 }
