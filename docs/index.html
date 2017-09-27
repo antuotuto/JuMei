@@ -32,6 +32,12 @@
       <div class="endLantern5 animated fadeInUp delay_600ms"></div>
       <div class="poetry-box">
         <div class="poetry animated fadeInUp delay_500ms"></div>
+        <div class="share shareNow animated fadeInUp delay_500ms">
+          <div class="share1"></div>
+          <div class="share2"></div>
+          <div class="share4">111</div>
+          <div class="share3"></div>
+        </div>
         <div class="fristButton animated fadeInUp delay_900ms" id="fristButton"></div>
       </div>
       <div class="endSCloud1"></div>
@@ -85,10 +91,13 @@
     <!-- 表格渲染页 -->
     <div class="excl-page" id="exclPage">
       <div class="exclPeople animated fadeInDown delay_200ms">
-        <span>123</span>
+        <div class="excl1">哇，世界上</div>
+        <div class="excl2">有<span id="countSpan">111</span>个人和你</div>
+        <div class="excl3">口味一样~</div>
       </div>
       <div class="exclButton animated fadeInUp delay_400ms" id="exclButton"></div>
     </div>
+
     <!--  -->
     <!-- 抽奖页 -->
     <div class="lottery-page" id="lotteryPage">
@@ -175,6 +184,11 @@
     var question = "";
     // 月饼抽奖
     var answer = "";
+
+
+
+
+
     // 首页到第二页的动画 后端不需要处理
     $('#fristButton').click(function() {
       $("#endPage").addClass("active");
@@ -249,17 +263,22 @@
       answer = $(e.target).index();
       var index = $('.wrap').index($(this))
       console.log(index);
-      if (answer === question) {
-        // 显示中奖页 后端不需要处理
-        $("#truePage").show();
-        // 显示等待中奖页 后端不需要处理
-        // $("#waitPage").show();
-        // 显示地址填写页 后端不需要处理
-        // $("#addressPage").show();
-      } else {
-        // 显示未中奖页 后端不需要处理
-        $("#sorryPage").show();
-      }
+      // if (answer === question) {
+      // 显示中奖页 后端不需要处理
+      // $("#truePage").show();
+      // 显示等待中奖页 后端不需要处理
+      // $("#waitPage").show();
+      // 显示地址填写页 后端不需要处理
+      // $("#addressPage").show();
+      // } else {
+      // 显示未中奖页 后端不需要处理
+      // }
+
+      $("#sorryPage").show(); //抽奖失败页显示
+      // $("#endPage").removeClass("active");   //第一个页面
+      // $("#lotteryPage").hide(0);    //抽奖页面的隐藏
+      // $("#sorryPage").hide(0);      // 抽奖失败页面隐藏
+      // $(".poetry").addClass("active")   // 用户在首页的第二次进入
     })
     // 地址填写的表单提交
     $("#UserMessage").click(function() {
